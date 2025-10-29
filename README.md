@@ -1,5 +1,5 @@
 
-![Language](https://img.shields.io/badge/Language-PHP-blue)
+![Language](https://img.shields.io/badge/Language-PHP%20CLI-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![Database](https://img.shields.io/badge/Backend-SQLite-blueviolet)
 ![Monitors](https://img.shields.io/badge/Targets-Windows%20%7C%20SQL%20Server-green)
