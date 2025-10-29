@@ -35,17 +35,14 @@ To install Handymon:
 
 ## Screenshots
 
-Below are a few screenshots — click any thumbnail to view the full-size image.
+Click any thumbnail to open the full-size image.
 
-<p align="center">
-<a href="./01-configure-home.png"><img src="./01-configure-home.png" alt="Home" width="280"/>Home</a>
-<a href="./02-configure-slack.png"><img src="./02-configure-slack.png" alt="Configure Slack" width="200"/>Configure Slack</a>
-<a href="./03-configure-add-win-monitor.png"><img src="./03-configure-add-win-monitor.png" alt="Add Windows Monitor" width="200"/>Add Windows Monitor</a>
-<br />
-<a href="./04-configure-add-mssql-monitor.png"><img src="./04-configure-add-mssql-monitor.png" alt="Add MSSQL Monitor" width="200"/>Add MSSQL Monitor</a>
-<a href="./05-configure-update-monitor.png"><img src="./05-configure-update-monitor.png" alt="Update Monitor" width="200"/>Update Monitor</a>
-<a href="./06-configure-update-alerting-rules.png"><img src="./06-configure-update-alerting-rules.png" alt="Update Alerting Rules" width="280"/>Update Alerting Rules</a>
-</p>
+- [![Home](./01-configure-home.png)](./01-configure-home.png) — Home
+- [![Configure Slack](./02-configure-slack.png)](./02-configure-slack.png) — Configure Slack
+- [![Add Windows Monitor](./03-configure-add-win-monitor.png)](./03-configure-add-win-monitor.png) — Add Windows Monitor
+- [![Add MSSQL Monitor](./04-configure-add-mssql-monitor.png)](./04-configure-add-mssql-monitor.png) — Add MSSQL Monitor
+- [![Update Monitor](./05-configure-update-monitor.png)](./05-configure-update-monitor.png) — Update Monitor
+- [![Update Alerting Rules](./06-configure-update-alerting-rules.png)](./06-configure-update-alerting-rules.png) — Update Alerting Rules
 
 ## Contributing
 
