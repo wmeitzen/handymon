@@ -10,9 +10,11 @@
 [![Issues](https://img.shields.io/github/issues/handymon/handymon.svg)](https://github.com/wmeitzen/handymon/issues)
 
 <div align="center">
+
 # Handymon
 
 Simple, Free Windows Server &amp; SQL Server Monitoring
+
 </div>
 
 Handymon is a lightweight, free monitoring tool for small businesses, schools, churches, and organizations with limited IT resources. It focuses on what matters most: sending alerts when servers, databases, or disks need attention.
