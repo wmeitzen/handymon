@@ -8,7 +8,8 @@
 [![Status](https://img.shields.io/badge/Status-Actively%20Maintained-blue)](#)
 [![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](https://github.com/wmeitzen/handymon/blob/main/HandymonSetup.exe)
 [![Issues](https://img.shields.io/github/issues/wmeitzen/handymon.svg)](https://github.com/wmeitzen/handymon/issues)
-[![Issues](https://img.shields.io/github/issues/wmeitzen/handymon.svg)](issues)
+[![Issues](https://img.shields.io/github/issues/wmeitzen/handymon.svg)](../../issues)
+
 
 
 <div align="center">
