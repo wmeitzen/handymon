@@ -18,7 +18,7 @@ Simple, Free Windows Server &amp; SQL Server Monitoring
 
 </div>
 
-Handymon is a free lightweight command-line monitoring tool for small businesses, schools, churches, nonprofits, or other organizations with limited IT resources. It focuses on what matters most: sending alerts when Windows servers, SQL Server database instances, or disks need attention.
+Handymon is a free lightweight TUI monitoring tool for small businesses, schools, churches, nonprofits, or other organizations with limited IT resources. It focuses on what matters most: sending alerts when Windows servers, SQL Server database instances, or disks need attention.
 
 Monitor multiple Windows Servers and SQL Server instances without limits. Receive timely notifications via email or Slack, schedule blackout periods for maintenance, and automate routine checks with background polling threads.
 
