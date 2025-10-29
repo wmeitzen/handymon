@@ -42,6 +42,11 @@ To install Handymon:
 
 Click any thumbnail to open the full-size image.
 
+- [<img src="./images/server-added-email-notification.jpg" alt="Windows Server Added email" width="200"/>](./images/server-added-email-notification.jpg) — Windows Server Added email
+- [<img src="./images/server-added-slack-notification.jpg" alt="Windows Server Added slack notification" width="200"/>](./images/server-added-slack-notification.jpg) — Windows Server Added slack notification
+- [<img src="./images/sql-server-added-email-notification.jpg" alt="SQL Server Added email" width="200"/>](./images/sql-server-added-email-notification.jpg) — SQL Server Added email
+- [<img src="./images/sql-server-added-slack-notification.jpg" alt="Windows Server Added slack notification" width="200"/>](./images/sql-server-added-slack-notification.jpg) — SQL Server Added slack notification
+
 - [<img src="./images/01-configure-home.png" alt="Home" width="200"/>](./images/01-configure-home.png) — Home
 - [<img src="./images/02-configure-slack.png" alt="Configure Slack" width="160"/>](./images/02-configure-slack.png) — Configure Slack
 - [<img src="./images/03-configure-add-win-monitor.png" alt="Add Windows Monitor" width="160"/>](./images/03-configure-add-win-monitor.png) — Add Windows Monitor
