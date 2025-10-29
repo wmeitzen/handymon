@@ -13,20 +13,6 @@
 
 <p align="center">Simple, Free Windows Server &amp; SQL Server Monitoring</p>
 
-## Screenshots
-
-<p align="center">
-<img src="./01-configure-home.png" alt="Home" width="600" />
-<br />
-<img src="./02-configure-slack.png" alt="Configure Slack" width="420" />
-<img src="./03-configure-add-win-monitor.png" alt="Add Windows Monitor" width="420" />
-<br />
-<img src="./04-configure-add-mssql-monitor.png" alt="Add MSSQL Monitor" width="420" />
-<img src="./05-configure-update-monitor.png" alt="Update Monitor" width="420" />
-<br />
-<img src="./06-configure-update-alerting-rules.png" alt="Update Alerting Rules" width="600" />
-</p>
-
 Handymon is a lightweight, free monitoring tool for small businesses, schools, churches, and organizations with limited IT resources. It focuses on what matters most: sending alerts when servers, databases, or disks need attention.
 
 Monitor multiple Windows Servers and SQL Server instances without limits. Receive timely notifications via email or Slack, schedule blackout periods for maintenance, and automate routine checks with background polling threads.
@@ -46,6 +32,20 @@ To install Handymon:
 
 - After installing via the setup executable, launch the Handymon Documentation.
 - Then, launch the Configure Handymon shortcut.
+
+## Screenshots
+
+Below are a few screenshots — click any thumbnail to view the full-size image.
+
+<p align="center">
+<a href="./01-configure-home.png"><img src="./01-configure-home.png" alt="Home" width="280"/></a>
+<a href="./02-configure-slack.png"><img src="./02-configure-slack.png" alt="Configure Slack" width="200"/></a>
+<a href="./03-configure-add-win-monitor.png"><img src="./03-configure-add-win-monitor.png" alt="Add Windows Monitor" width="200"/></a>
+<br />
+<a href="./04-configure-add-mssql-monitor.png"><img src="./04-configure-add-mssql-monitor.png" alt="Add MSSQL Monitor" width="200"/></a>
+<a href="./05-configure-update-monitor.png"><img src="./05-configure-update-monitor.png" alt="Update Monitor" width="200"/></a>
+<a href="./06-configure-update-alerting-rules.png"><img src="./06-configure-update-alerting-rules.png" alt="Update Alerting Rules" width="280"/></a>
+</p>
 
 ## Contributing
 
