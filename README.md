@@ -11,7 +11,7 @@
 
 <div align="center">
 
-# Handymon
+# <img src="./images/hm-application-icon.png" width="30"/> Handymon
 
 Simple, Free Windows Server &amp; SQL Server Monitoring
 
@@ -25,19 +25,19 @@ Built for the lone IT worker, Handymon is easy to install, simple to configure, 
 
 Handymon - simple, free, and built to just work.
 
-## Installation
+## <img src="./images/hm-application-icon.png" width="20"/> Installation
 
 To install Handymon:
 
 - Download the official installer.
 - Run it.
 
-## Quick start
+## <img src="./images/hm-application-icon.png" width="20"/> Quick start
 
 - After installing via the setup executable, launch the Handymon Documentation.
 - Then, launch the Configure Handymon shortcut.
 
-## Screenshots
+## <img src="./images/hm-application-icon.png" width="20"/> Screenshots
 
 Click any thumbnail to open the full-size image.
 
@@ -48,18 +48,18 @@ Click any thumbnail to open the full-size image.
 - [<img src="./images/05-configure-update-monitor.png" alt="Update Monitor" width="160"/>](./images/05-configure-update-monitor.png) — Update Monitor
 - [<img src="./images/06-configure-update-alerting-rules.png" alt="Update Alerting Rules" width="200"/>](./images/06-configure-update-alerting-rules.png) — Update Alerting Rules
 
-## Contributing
+## <img src="./images/hm-application-icon.png" width="20"/> Contributing
 
 Contributions, bug reports and feature requests are welcome.
 
 - Open an issue on GitHub to discuss bugs or feature ideas.
 - Keep changes small and focused; describe the goal and any compatibility notes in your PR.
 
-## License
+## <img src="./images/hm-application-icon.png" width="20"/> License
 
 This project is provided under the MIT License — see the `LICENSE` file for details.
 
-## Where to get help
+## <img src="./images/hm-application-icon.png" width="20"/> Where to get help
 
 - Open an issue on GitHub if you need support or want to report a problem.
 
