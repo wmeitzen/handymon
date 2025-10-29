@@ -1,5 +1,5 @@
 
-![Language](https://img.shields.io/badge/Language-PHP%20CLI-blue)
+![Powered by](https://img.shields.io/badge/Powered%20by-PHP%20CLI-777bb4)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![Database](https://img.shields.io/badge/Backend-SQLite-blueviolet)
 ![Monitors](https://img.shields.io/badge/Targets-Windows%20%7C%20SQL%20Server-green)
@@ -42,6 +42,7 @@ Handymon - simple, free, and built to just work.
 To install Handymon:
 
 - Download the official installer &nbsp; [![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](https://github.com/wmeitzen/handymon/raw/main/HandymonSetup.exe)
+[![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](../../raw/main/HandymonSetup.exe)
 - Run it.
 
 ## <img src="./images/hm-application-icon.png" width="20"/> Quick start
