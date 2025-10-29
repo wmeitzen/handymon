@@ -45,7 +45,10 @@ Click any thumbnail to open the full-size image.
 - [<img src="./images/server-added-email-notification.jpg" alt="Windows Server Added email" width="200"/>](./images/server-added-email-notification.jpg) — Windows Server Added email
 - [<img src="./images/server-added-slack-notification.jpg" alt="Windows Server Added slack notification" width="200"/>](./images/server-added-slack-notification.jpg) — Windows Server Added slack notification
 - [<img src="./images/sql-server-added-email-notification.jpg" alt="SQL Server Added email" width="200"/>](./images/sql-server-added-email-notification.jpg) — SQL Server Added email
-- [<img src="./images/sql-server-added-slack-notification.jpg" alt="Windows Server Added slack notification" width="200"/>](./images/sql-server-added-slack-notification.jpg) — SQL Server Added slack notification
+- [<img src="./images/sql-server-added-slack-notification.jpg" alt="SQL Server Added slack notification" width="200"/>](./images/sql-server-added-slack-notification.jpg) — SQL Server Added slack notification
+- [<img src="./images/disk-space-warning-email.png" alt="Disk Space Warning email" width="200"/>](./images/disk-space-warning-email.png) — Disk Space Warning email
+- [<img src="./images/disk-space-warning-reminder-email.png" alt="Disk Space Warning Reminder email" width="200"/>](./images/disk-space-warning-reminder-email.png) — Disk Space Warning Reminder email
+- [<img src="./images/win-server-rebooted-email.png" alt="Windows Server Rebooted email" width="200"/>](./images/win-server-rebooted-email.png) — Windows Server Rebooted email
 
 - [<img src="./images/01-configure-home.png" alt="Home" width="200"/>](./images/01-configure-home.png) — Home
 - [<img src="./images/02-configure-slack.png" alt="Configure Slack" width="160"/>](./images/02-configure-slack.png) — Configure Slack
