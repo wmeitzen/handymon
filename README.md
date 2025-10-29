@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/wmeitzen/handymon/blob/main/LICENSE)
 [![Status](https://img.shields.io/badge/Status-Actively%20Maintained-blue)](#)
-[![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](https://github.com/wmeitzen/handymon/handymon-setup-exe/releases/latest)
+[![Download](https://img.shields.io/badge/Download%20Setup.exe-orange)](https://github.com/wmeitzen/handymon/HandymonSetup.exe)
 [![Issues](https://img.shields.io/github/issues/handymon/handymon.svg)](https://github.com/wmeitzen/handymon/issues)
 
 <div align="center">
@@ -29,7 +29,7 @@ Handymon - simple, free, and built to just work.
 
 To install Handymon:
 
-- Download the official installer.
+- Download the official installer [![Download](https://img.shields.io/badge/Download20Setup.exe-orange)](https://github.com/wmeitzen/handymon/HandymonSetup.exe)
 - Run it.
 
 ## <img src="./images/hm-application-icon.png" width="20"/> Quick start
