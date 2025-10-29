@@ -49,6 +49,8 @@ Click any thumbnail to open the full-size image.
 - [<img src="./images/disk-space-warning-email.png" alt="Disk Space Warning email" width="200"/>](./images/disk-space-warning-email.png) — Disk Space Warning email
 - [<img src="./images/disk-space-warning-reminder-email.png" alt="Disk Space Warning Reminder email" width="200"/>](./images/disk-space-warning-reminder-email.png) — Disk Space Warning Reminder email
 - [<img src="./images/win-server-rebooted-email.png" alt="Windows Server Rebooted email" width="200"/>](./images/win-server-rebooted-email.png) — Windows Server Rebooted email
+- [<img src="./images/win-server-offline-email.png" alt="Windows Server Offline email" width="200"/>](./images/win-server-offline-email.png) — Windows Server Offline email
+- [<img src="./images/win-server-rebooted-email.png" alt="SQL Server Agent Job Error email" width="200"/>](./images/win-server-rebooted-email.png) — SQL Server Agent Job Error email
 
 - [<img src="./images/01-configure-home.png" alt="Home" width="200"/>](./images/01-configure-home.png) — Home
 - [<img src="./images/02-configure-slack.png" alt="Configure Slack" width="160"/>](./images/02-configure-slack.png) — Configure Slack
