@@ -26,6 +26,15 @@ Built for the lone IT worker, Handymon is easy to install, simple to configure, 
 
 Handymon - simple, free, and built to just work.
 
+## <img src="./images/hm-application-icon.png" width="20"/> Features
+
+- Easy Installation
+- Documentation Included
+- Supports Alerting Through Email and Slack
+- Windows Alerts: Online/Offline, Reboots, Low Disk Space
+- SQL Server Alerts: Online/Offline/Offline Reminders, New Databases, Deleted Databases, New Jobs, Deleted Jobs, Job Errors
+- Runs on Windows 10, Windows Server 2012 R2, and later
+
 ## <img src="./images/hm-application-icon.png" width="20"/> Installation
 
 To install Handymon:
@@ -35,7 +44,7 @@ To install Handymon:
 
 ## <img src="./images/hm-application-icon.png" width="20"/> Quick start
 
-- After installing via the setup executable, launch the Handymon Documentation.
+- After installing via the setup executable, launch and review the Handymon Documentation.
 - Then, launch the Configure Handymon shortcut.
 
 ## <img src="./images/hm-application-icon.png" width="20"/> Screenshots
