@@ -4,10 +4,10 @@
 ![Database](https://img.shields.io/badge/Backend-SQLite-blueviolet)
 ![Monitors](https://img.shields.io/badge/Targets-Windows%20%7C%20SQL%20Server-green)
 
-[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/wmeitzen/handymon/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Status](https://img.shields.io/badge/Status-Actively%20Maintained-blue)](#)
 [![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](https://github.com/wmeitzen/handymon/blob/main/HandymonSetup.exe)
-[![Issues](https://img.shields.io/github/issues/wmeitzen/handymon.svg)](issues)
+[![Issues](https://img.shields.io/github/issues/wmeitzen/handymon.svg)](wmeitzen/handymon/issues)
 
 
 <div align="center">
