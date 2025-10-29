@@ -37,12 +37,12 @@ To install Handymon:
 
 Click any thumbnail to open the full-size image.
 
-- [![Home](./01-configure-home.png)](./01-configure-home.png) — Home
-- [![Configure Slack](./02-configure-slack.png)](./02-configure-slack.png) — Configure Slack
-- [![Add Windows Monitor](./03-configure-add-win-monitor.png)](./03-configure-add-win-monitor.png) — Add Windows Monitor
-- [![Add MSSQL Monitor](./04-configure-add-mssql-monitor.png)](./04-configure-add-mssql-monitor.png) — Add MSSQL Monitor
-- [![Update Monitor](./05-configure-update-monitor.png)](./05-configure-update-monitor.png) — Update Monitor
-- [![Update Alerting Rules](./06-configure-update-alerting-rules.png)](./06-configure-update-alerting-rules.png) — Update Alerting Rules
+- [<img src="./01-configure-home.png" alt="Home" width="200"/>](./01-configure-home.png) — Home
+- [<img src="./02-configure-slack.png" alt="Configure Slack" width="160"/>](./02-configure-slack.png) — Configure Slack
+- [<img src="./03-configure-add-win-monitor.png" alt="Add Windows Monitor" width="160"/>](./03-configure-add-win-monitor.png) — Add Windows Monitor
+- [<img src="./04-configure-add-mssql-monitor.png" alt="Add MSSQL Monitor" width="160"/>](./04-configure-add-mssql-monitor.png) — Add MSSQL Monitor
+- [<img src="./05-configure-update-monitor.png" alt="Update Monitor" width="160"/>](./05-configure-update-monitor.png) — Update Monitor
+- [<img src="./06-configure-update-alerting-rules.png" alt="Update Alerting Rules" width="200"/>](./06-configure-update-alerting-rules.png) — Update Alerting Rules
 
 ## Contributing
 
