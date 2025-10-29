@@ -6,8 +6,8 @@
 
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
-[![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](https://github.com/handymon/handymon-setup-exe/releases/latest)
-[![Issues](https://img.shields.io/github/issues/handymon/handymon.svg)](https://github.com/handymon/issues)
+[![Download](https://img.shields.io/badge/Download-Latest%20Setup.exe-orange)](https://github.com/wmeitzen/handymon/handymon-setup-exe/releases/latest)
+[![Issues](https://img.shields.io/github/issues/handymon/handymon.svg)](https://github.com/wmeitzen/handymon/issues)
 
 # Handymon - Simple, Free Windows Server & SQL Server Monitoring
 
