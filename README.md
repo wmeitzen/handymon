@@ -18,9 +18,9 @@ Simple, Free Windows Server &amp; SQL Server Monitoring
 
 </div>
 
-Handymon is a free lightweight command-line monitoring tool for small businesses, schools, churches, and organizations with limited IT resources. It focuses on what matters most: sending alerts when Windows servers, SQL Server database instances, or disks need attention.
+Handymon is a free lightweight command-line monitoring tool for small businesses, schools, churches, nonprofits, or other organizations with limited IT resources. It focuses on what matters most: sending alerts when Windows servers, SQL Server database instances, or disks need attention.
 
-Monitor multiple Windows Servers and SQL Server instances without limits. Receive timely notifications via email or Slack, schedule blackout periods for maintenance, and automate routine checks with background polling threads. Use Alert Rules to escalate high priority alerts to different email addresses or slack channels, or use them to cancel those alerts you don't care about.
+Monitor multiple Windows Servers and SQL Server instances without limits. Receive timely notifications via email or Slack, schedule blackout periods for maintenance, and automate routine checks with background polling threads.
 
 Built for the lone IT worker, Handymon is easy to install, simple to configure, and scales as your organization grows. No dashboards, no licensing fees, no unnecessary complexity - just reliable alerts when you need them.
 
@@ -33,7 +33,7 @@ Handymon - simple, free, and built to just work.
 - Supports Alerting Through Email and Slack
 - Windows Alerts: Online/Offline, Reboots, Low Disk Space
 - SQL Server Alerts: Online/Offline/Offline Reminders, New Databases, Deleted Databases, New Jobs, Deleted Jobs, Job Errors
-- Support Alert Rules to reroute or cancel alerts
+- Supports Rerouting or Cancelling Alerts using Alert Rules
 - Runs on Windows 10, Windows Server 2012 R2, and later
 
 ## <img src="./images/hm-application-icon.png" width="20"/> Installation
