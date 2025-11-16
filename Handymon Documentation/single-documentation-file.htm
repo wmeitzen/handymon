@@ -1,0 +1,2927 @@
+<!--[<header.htm>]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handymon | Documentation</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+</head>
+<style>
+pre {
+    color: #E0E0E0; /* Light grey for text */
+    background-color: #333; /* Dark grey background */
+    padding: 10px;
+    border-radius: 5px;
+	white-space: pre-wrap;
+    word-break: normal;
+}
+
+</style>
+<!--
+<body class="hold-transition sidebar-mini layout-fixed">
+-->
+<body class="hold-transition sidebar-mini layout-fixed dark-mode">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    <!--
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    -->
+    <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+        <a href="" class="nav-link">Home</a>
+        </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+<!--
+        < !-- Navbar Search -- >
+        <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+            <form class="form-inline">
+            <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
+            </div>
+            </form>
+        </div>
+        </li>
+-->
+
+<!--
+        < !-- Messages Dropdown Menu -- >
+        <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+            < !-- Message Start -- >
+            <div class="media">
+                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+            </div>
+            < !-- Message End -- >
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+            < !-- Message Start -- >
+            <div class="media">
+                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+            </div>
+            < !-- Message End -- >
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+            < !-- Message Start -- >
+            <div class="media">
+                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+            </div>
+            < !-- Message End -- >
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+        </li>
+-->
+
+        <!-- Notifications Dropdown Menu -->
+<!--
+        <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+        </li>
+-->
+<!--
+        <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+        </li>
+-->
+<!--
+        <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+        </a>
+        </li>
+-->
+    </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar main-sidebar-custom sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="" class="brand-link">
+        <img src="dist/img/AdminLTELogo.png" alt="Handymon Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Handymon</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+            <a href="" class="d-block">Handymon</a>
+        </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+<!--
+        <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+            <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+            </button>
+            </div>
+        </div>
+        </div>
+-->
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                with font-awesome or any other icon font library -->
+
+<!-- begin replace [href="#] [href="] -->
+
+<li class="nav-item">
+    <a href="#index.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Home
+    </p>
+    </a>
+</li>
+
+
+<li class="nav-item menu-open">
+    <a href="#setting_up_handymon_TBD.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Setting Up Handymon<i class="right fas fa-angle-right"></i>
+    </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#first_time_setup.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>First Time Setup</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#credentials.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Creating Credentials</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#setting_org_name.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Organization Name</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#configuring_email.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Email Alert Information</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#configuring_slack.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Configuring Slack</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#setting_timezone.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Setting the Timezone</p>
+        </a>
+        </li>
+    </ul>
+</li>
+
+
+<li class="nav-item menu-open">
+    <a href="#configuration_TBD.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Configuration<i class="right fas fa-angle-right"></i>
+    </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#disk_alert_thresholds.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Disk Alert Thresholds</p>
+        </a>
+        </li>
+    </ul>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#poll_interval_configuration.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Poll Intervals</p>
+        </a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item menu-open">
+    <a href="#monitors_TBD.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Monitors<i class="right fas fa-angle-right"></i>
+    </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#add_win_monitors.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Adding Windows Monitors</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#add_disk_monitors.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Adding Disk Monitors</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#add_mssql_monitors.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Adding SQL Server Monitors</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#edit_monitor.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Editing Monitors</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#deleting_monitors_TBD.html" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Deleting Monitors</p>
+        </a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item menu-open">
+    <a href="#alerts_TBD.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Alerts<i class="right fas fa-angle-right"></i>
+    </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#alert_rules.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Understanding Alert Rules</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#creating_alert_rules_TBD.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Creating Alert Rules</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#alert_rule_examples.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Alert Rule Examples</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#alert_rule_reference.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Alert Rule Reference</p>
+        </a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item menu-open">
+    <a href="#reference_TBD.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Reference<i class="right fas fa-angle-right"></i>
+    </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#preparing_windows_monitoring.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Preparing Windows Monitoring</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#configuration_values.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Configuration Values</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#sql_server_login_permissions.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>SQL Server Login Permissions</p>
+        </a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item menu-open">
+    <a href="#troubleshooting_TBD.htm" class="nav-link">
+    <i class="nav-icon far fa-image"></i>
+    <p>
+        Troubleshooting<i class="right fas fa-angle-right"></i>
+    </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+        <a href="#common_issues_TBD.htm" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Common Issues</p>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a href="#verifying_server_connections_TBD.html" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Verifying Server Connections</p>
+        </a>
+        </li>
+    </ul>
+</li>
+
+
+<!-- end replace -->
+
+
+        </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+
+    <div class="sidebar-custom">
+        <a href="#" class="btn btn-link"><i class="fas fa-cogs"></i></a>
+        <a href="#" class="btn btn-secondary hide-on-collapse pos-right">Help</a>
+    </div>
+    <!-- /.sidebar-custom -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+<!--
+        <div class="container-fluid">
+        <div class="row mb-2">
+-->
+<!--
+            <div class="col-sm-6">
+            <h1>Fixed Layout</h1>
+            </div>
+-->
+<!--
+            <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Layout</a></li>
+                <li class="breadcrumb-item active">Fixed Layout</li>
+            </ol>
+            </div>
+-->
+<!--
+        </div>
+        </div>
+-->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+<!-- This line and above is header -->
+
+<!--[</header.htm>]-->
+
+<!--[<index.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="index.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Welcome to Handymon!</h3>
+</div>
+<div class="card-body">
+
+<h2>Welcome to Handymon!</h2>
+
+<p>Handymon is your all-in-one, self-contained monitoring system for Windows servers and SQL Server instances.<br />
+It's built for the hands-on lone I.T. professional -- the one who keeps everything running smoothly -- and prefers tools that just work.</p>
+
+<p>Handymon runs entirely on a single workstation.<br />
+No agents, no central server, no cloud dependency -- just direct, actionable monitoring and alerts that keep you informed and in control.</p>
+
+<p></p>
+
+<h4>Early Access Notice</h4>
+
+<p>Handymon is still under active development and currently runs through a text-based interface (TUI).<br />
+It's stable for everyday use, and I try to perform regression testing and unit testing reasonably well.<br />
+Your feedback helps shape future versions.</p>
+
+<h4>Upgrade Notice</h4>
+
+<p>Occasionally, updates may reset your configuration (like servers or credentials).<br />
+You'll just need to re-enter your settings if that happens.<br />
+Configuration persistence will become automatic in future releases.</p>
+
+<p><h4>Ready to get started? Here's what makes Handymon stand out:</h4></p>
+
+<ul>
+<li>🖥️ Standalone and simple -- install it on your workstation and start monitoring right away.</li>
+<li>⚙️ Monitors Windows and SQL Server environments.</li>
+<li>🧭 Interactive menus for manual configuration -- no deep scripting required.</li>
+<li>🔁 Robust error handling and retry logic to keep checks consistent.</li>
+<li>📘 Clear documentation and guides to get you productive fast.</li>
+</ul>
+
+<p><h4>Useful Links for First-Time Users:</h4></p>
+
+<!-- begin replace [href="#] [href="] -->
+<ul>
+  <li><a href="#first_time_setup.htm">First-Time Setup Guide</a> (start here)</li>
+  <li><a href="#disk_alert_thresholds.htm">Disk Alert Thresholds</a></li>
+  <li><a href="#add_win_monitors.htm">Adding Windows Monitors</a></li>
+  <li><a href="#add_mssql_monitors.htm">Adding SQL Server monitors</a></li>
+</ul>
+<!-- end replace -->
+
+<p>Handymon is designed to be intuitive, powerful, and flexible -- perfect for admins who need to monitor small to medium-size infrastructures.<br />
+Install it, dive in, explore the docs, configure your servers, and start monitoring!</p>
+
+<h4>Development Support</h4>
+
+<p>Handymon is developed and tested primarily on Windows virtual machines in my spare time.<br />
+If you have a spare Windows or SQL Server environment available for testing and wouldn't mind sharing access, that support would be greatly appreciated.</p>
+
+<p>Having an additional server to test on helps improve compatibility, reliability, and overall quality for everyone.</p>
+
+<p>(Please ensure any shared system contains no sensitive or production data.)</p>
+
+<p>If you can't provide access to a non-production environment, no problem!<br />
+Just send me any of these you can:</p>
+
+<ul>
+<li>OS version, build, number of disks, free and used space<br />
+Windows Server 2019 Standard, Windows 11 Pro<br />
+3 disks (C:, F:, M:)<br />
+Free / Used space: C: 500 GB total / 300 GB used / 200 GB free<br />
+</li>
+<li>SQL Server versions, CU, number of instances, number of databases, types of SQL Agent jobs, authentication types:<br />
+SQL Server 2016 Express, SQL Server 2019 Enterprise, SQL Server 2022 Standard<br />
+CU / patch level (e.g., CU26, 15.0.4316.3)<br />
+Authentication type used (Windows, SQL, or mixed mode)<br />
+Index maintenance jobs, database maintenance plans<br />
+</li>
+<li>Handymon version, files in the Handymon\logs directory</li>
+<li>Whether you use Handymon with email and/or Slack</li>
+<li>Any quirks you've noticed</li>
+<li>Anything Special<br />
+Custom paths, permissions, or security settings<br />
+Any recurring warnings, errors, or connection quirks you've noticed<br />
+</li>
+</ul>
+
+<p>That info helps me replicate your setup.</p>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Welcome!
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</index.htm>]-->
+
+<!--[<first_time_setup.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="first_time_setup.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">First Time Setup: Getting Started With Handymon</h3>
+
+<div class="card-tools">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+    <i class="fas fa-minus"></i>
+    </button>
+    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+    <i class="fas fa-times"></i>
+    </button>
+</div>
+</div>
+<div class="card-body">
+<h2>Getting Started With Handymon</h2>
+<p>Handymon is compatible with Windows 10 and later, as well as Windows Server 2014 and later.</p>
+
+<p>Handymon can run on Windows 2012 R2 as long as it has the latest Windows updates.</p>
+
+<p>Handymon can monitor SQL Server 2008 R2 and later.</p>
+
+<p>For a complete first-time setup, you'll want to both configure alerts and start monitoring your systems. We recommend setting up email and Slack notifications first, so you can be notified immediately when you add your first workstation and SQL Server instance.</p>
+
+<p>Step 1: Set Up Alerts</p>
+<ul>
+  <li>Configure and test email notifications</li>
+  <li>Configure and test Slack alerts</li>
+</ul>
+
+<p>Step 2: Add Resources</p>
+<ul>
+  <li>Add your first Windows workstation</li>
+  <li>Add your first SQL Server instance</li>
+</ul>
+
+<p>Why together? Setting up alerts before adding resources means you'll be notified as soon as monitoring starts.</p>
+<br />
+<p>Step 1: Set Up Alerts</p>
+<p>Launch the <strong>Configure Handymon</strong> icon.</p>
+<p>Set up at least one method of receiving notifications: <strong>Email</strong> or <strong>Slack</strong>. I'll go through each one.</p>
+<p><strong>How To Configure Email Notifications</strong></p>
+<p>Choose <strong>(26) Update email authentication information</strong>.</p>
+Configure the settings for your email authentication and destination, (T) Send a test email, then (S) Save the settings.<br />
+Here is an example of a successful setup using gmail.com. A small amount of information was redacted for security or brevity.<br />
+<pre>
+--- Update Email Authentication Information
+
+All items changed will have an asterisk.
+
+(0) enable_email_alerts: TRUE
+* (1) email_auth_host: smtp.gmail.com
+(2) email_auth_ishtml: TRUE
+(3) email_auth_issmtp: TRUE
+* (4) email_auth_password: *** (password)
+(5) email_auth_port: 587
+(6) email_auth_smtpauth: TRUE
+(7) email_auth_smtpsecure: tls
+* (8) email_auth_username: username@domain.com
+* (9) default_email_from: username@domain.com
+* (10) default_email_to: username@domain.com
+(T) Send a test email
+(S) Save values and exit
+(C) Cancel changes and exit
+
+### Enter choice: t
+
+Destination email:
+[1] Default address (username@domain.com)
+[2] Type email address
+[3] Exit
+
+### Enter (1, 2, 3, or Enter to exit): 1
+
+
+Working ...
+
+2025-08-16 14:10:45     SERVER -&gt; CLIENT: 220 smtp.gmail.com ESMTP 6a1803df08f44-70ba90bcc80sm23593586d6.32 - gsmtp
+2025-08-16 14:10:45     CLIENT -&gt; SERVER: EHLO admin
+2025-08-16 14:10:45     SERVER -&gt; CLIENT: 250-smtp.gmail.com at your service, [omitted IP address]
+                                          250-SIZE 35882577
+                                          250-8BITMIME
+                                          250-STARTTLS
+                                          250-ENHANCEDSTATUSCODES
+                                          250-PIPELINING
+                                          250-CHUNKING
+                                          250 SMTPUTF8
+2025-08-16 14:10:45     CLIENT -&gt; SERVER: STARTTLS
+2025-08-16 14:10:45     SERVER -&gt; CLIENT: 220 2.0.0 Ready to start TLS
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: EHLO admin
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 250-smtp.gmail.com at your service, [omitted IP address]
+                                          250-SIZE 35882577
+                                          250-8BITMIME
+                                          250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+                                          250-ENHANCEDSTATUSCODES
+                                          250-PIPELINING
+                                          250-CHUNKING
+                                          250 SMTPUTF8
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: AUTH LOGIN
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 334 VXNlcm5hbWU6
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: [credentials hidden]
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 334 UGFzc3dvcmQ6
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: [credentials hidden]
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 235 2.7.0 Accepted
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: MAIL FROM:&lt;username@domain.com&gt;
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 250 2.1.0 OK 6a1803df08f44-70ba90bcc80sm23593586d6.32 - gsmtp
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: RCPT TO:&lt;username@domain.com&gt;
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 250 2.1.5 OK 6a1803df08f44-70ba90bcc80sm23593586d6.32 - gsmtp
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: DATA
+2025-08-16 14:10:46     SERVER -&gt; CLIENT: 354 Go ahead 6a1803df08f44-70ba90bcc80sm23593586d6.32 - gsmtp
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: Date: Sat, 16 Aug 2025 14:10:45 +0000
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: To: username@domain.com
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: From: username@domain.com
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: Subject: Test Email | Handymon
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: Message-ID: &lt;dcIFSV8vBtVkpArqkLN29eg6Ye3X6ERZd9poD7Pss@admin&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: X-Mailer: PHPMailer 6.8.0 (https://github.com/PHPMailer/PHPMailer)
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: MIME-Version: 1.0
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: Content-Type: text/html; charset=iso-8859-1
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;!DOCTYPE html&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;html&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;head&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;style&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: * {
+[omitted style tags]
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;/style&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;/head&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;body&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;div class="section"&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:       &lt;h2 class="section-heading"&gt;Test Email &lt;span class="vbar"&gt;|&lt;/span&gt; Another Handymon Organization&lt;/h2&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:       &lt;p class="block"&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:               &lt;span class="alert-heading"&gt;Handymon Alert&lt;/span&gt;&lt;br /&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:               This is a test email sent by the Handymon configuration utility.&lt;br /&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:         It works! Hoo-RAY! Yip-PEE! Yah-HOO!
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:       &lt;/p&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;/div&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;hr&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: This email was sent from the Handymon utility.&lt;br /&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;/body&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: &lt;/html&gt;
+2025-08-16 14:10:46     CLIENT -&gt; SERVER:
+2025-08-16 14:10:46     CLIENT -&gt; SERVER: .
+2025-08-16 14:10:47     SERVER -&gt; CLIENT: 250 2.0.0 OK  1755353446 6a1803df08f44-70ba90bcc80sm23593586d6.32 - gsmtp
+2025-08-16 14:10:47     CLIENT -&gt; SERVER: QUIT
+2025-08-16 14:10:47     SERVER -&gt; CLIENT: 221 2.0.0 closing connection 6a1803df08f44-70ba90bcc80sm23593586d6.32 - gsmtp
+
+Email message sent successfully!
+</pre>
+<a href="images/configuration-test-email-msg.jpg" target="_blank">
+<img src="images/configuration-test-email-msg.jpg" width="400" alt="Test email message example" /></a><br />
+<br />
+<pre>
+--- Update Email Authentication Information
+
+All items changed will have an asterisk.
+
+(0) enable_email_alerts: TRUE
+* (1) email_auth_host: smtp.gmail.com
+(2) email_auth_ishtml: TRUE
+(3) email_auth_issmtp: TRUE
+* (4) email_auth_password: *** (password)
+(5) email_auth_port: 587
+(6) email_auth_smtpauth: TRUE
+(7) email_auth_smtpsecure: tls
+* (8) email_auth_username: username@domain.com
+* (9) default_email_from: username@domain.com
+* (10) default_email_to: username@domain.com
+(T) Send a test email
+(S) Save values and exit
+(C) Cancel changes and exit
+
+### Enter choice: s
+
+Database updated ok.
+</pre>
+<p><strong>How To Configure Slack Notifications</strong></p>
+<p>Choose <strong>(14) Update slack configuration</strong>.</p>
+Configure the settings to let Handymon send slack messages, (T) Send a test slack message, then (S) Save the settings.<br />
+Here is an example of a successful setup. A small amount of information was redacted for security.<br />
+
+<pre>
+--- Update Slack Information
+
+All items changed will have an asterisk.
+
+* (0) enable_slack_alerts: TRUE
+(1) default_slack_channel: #general
+* (2) slack_token: xoxX-SLACK-TOKEN-GOES-HERE
+(T) Send a test slack message
+(S) Save values and exit
+(C) Cancel changes and exit
+
+### Enter choice: t
+
+--- Send test slack message ---
+
+Destination slack channel:
+(1) Default channel (config default_slack_channel = #general)
+(2) Type slack channel
+(3) Exit
+
+### Enter (1, 2, 3, or Enter to exit): 1
+
+### Enter message (or Enter for 'Test slack message sent to channel `#general` | _Handymon_ '):
+Message sent successfully!
+</pre>
+<a href="images/configuration-test-slack-msg.jpg" target="_blank">
+<img src="images/configuration-test-slack-msg.jpg" width="400" alt="Test slack message example" /></a><br />
+<br />
+<pre>
+--- Update Slack Information
+
+All items changed will have an asterisk.
+
+* (0) enable_slack_alerts: TRUE
+(1) default_slack_channel: #general
+* (2) slack_token: xoxX-SLACK-TOKEN-GOES-HERE
+(T) Send a test slack message
+(S) Save values and exit
+(C) Cancel changes and exit
+
+### Enter choice: s
+
+Database updated ok.
+</pre>
+<br />
+<p>Step 2: Add Resources</p>
+<strong>Prepare the Target Machine</strong><br />
+<br />
+<p>For each target Windows machine you want to monitor, Handymon requires a dedicated monitoring user account with local administrator privileges.</p>
+<p>Create the dedicated monitoring user account on each target machine in one of the following ways:</p>
+<ul>
+    <li>If you're on a Windows Active Directory domain, create a domain account, then grant it local admin privileges on the target machine, say, "DOMAIN_NAME\handymon".</li>
+    <li>Otherwise, create a local Windows administrator account on the target machine, say, "handymon".</li>
+</ul>
+<p>For the purposes of this document, instead of referring to "WORKSTATION_MACHINE\handymon" or "DOMAIN_NAME\handymon", I will refer to the Windows username as "TARGET\handymon".</p>
+<strong>Add Windows Server to Monitor</strong><br />
+<br />
+<p>Choose <strong>(28) Monitor new Windows Server</strong>.</p>
+<p>Choose <strong>(1) Windows server name</strong>, enter the server name you wish to monitor, then enter the display name you wish to use, or press Enter to use the default display name.</p>
+<p>Since this is your first time entering a server to monitor, choose <strong>(4) Create a new Windows username</strong>. I recommend using "TARGET\handymon" instead of just "handymon".</p>
+Enter the password for "TARGET\handymon" twice.<br />
+Enter a display name for new credential, or press Enter to use the default display name.<br />
+<br />
+<p>Choose <strong>(T) Test monitor</strong> to verify Handymon can connect to and monitor the Windows server.</p>
+<ul>
+<!-- begin replace [href="#] [href="] -->
+<li>If it's unable to connect, or any tests fail, review the <a href="#preparing_windows_monitoring.htm">Verify A Windows Server or Workstation can be Monitored</a> section of this documentation.</li>
+<!-- end replace -->
+</ul>
+<br />
+<p>Choose <strong>(A) Add new monitor and exit</strong> to save the monitor and exit. This also starts monitoring the Windows machine.</p>
+Here is an example of setting up a new Windows monitor.<br />
+<pre>
+--- Add a New Windows Monitor
+
+(1) Windows server name: [win-l2b821bsvk4]
+(2) Display name: [win-l2b821bsvk4 Windows Server]
+[ ] (3) Use existing Windows username: []
+[*] (4) Create new Windows username: [win-l2b821bsvk4\handymon]
+    (5) Password: [*********] (required for new Windows username)
+    (6) Credential display name: [win-win-l2b821bsvk4\handymon] (required for new Windows username)
+[ ] (7) Use no credentials
+(8) Schedule blackout start date (when to pause polling): []
+(9) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (1-9,N,C): t
+
+Testing connection to win-l2b821bsvk4 using new credentials (username: win-l2b821bsvk4\handymon) ...
+Successful: TRUE
+
+--- Add a New Windows Monitor
+
+(1) Windows server name: [win-l2b821bsvk4]
+(2) Display name: [win-l2b821bsvk4 Windows Server]
+[ ] (3) Use existing Windows username: []
+[*] (4) Create new Windows username: [win-l2b821bsvk4\handymon]
+    (5) Password: [*********] (required for new Windows username)
+    (6) Credential display name: [win-win-l2b821bsvk4\handymon] (required for new Windows username)
+[ ] (7) Use no credentials
+(8) Schedule blackout start date (when to pause polling): []
+(9) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (1-9,N,C): a
+
+New Windows credential "win-l2b821bsvk4\handymon" added.
+
+New Windows server "win-l2b821bsvk4" ("win-l2b821bsvk4 Windows Server") added.
+</pre>
+<p>Handymon sends an alert the first time it polls something, so you should receive an alert soon.</p>
+Here's an example from slack:<br />
+<a href="images/server-added-slack-notification.jpg" target="_blank">
+<img src="images/server-added-slack-notification.jpg" width="400" alt="Test slack message example" /></a><br />
+<br />
+Here's an example from email:<br />
+<a href="images/server-added-email-notification.jpg" target="_blank">
+<img src="images/server-added-email-notification.jpg" width="400" alt="Test email message example" /></a><br />
+
+<br />
+<strong>Add SQL Server Instance to Monitor</strong><br />
+<br />
+
+<p>Choose <strong>(5) Monitor new SQL Server instance</strong>.</p>
+
+<p>Choose <strong>(1) SQL Server instance name</strong>.</p>
+
+In this case, I'll choose to monitor the SQL Server instance on the Windows server we added earlier.<br />
+<pre>
+Command (Enter to exit): 5
+
+--- Add New SQL Server Instance ---
+
+This will involve 2 steps:
+
+Step 1: Select a SQL Server instance
+Step 2: Select monitoring credentials
+
+--- Step 1: Select a SQL Server Instance
+
+(1) SQL Server instance name: []
+(2) Display name: []
+(3) SQL Server connection security settings: [Encrypt: AUTO-DETECT, Trust Server Cert: AUTO-DETECT]
+(4) Schedule blackout start date (when to pause polling): []
+(5) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(N) Next: Select monitoring credentials
+(C) Cancel and exit
+
+### Enter choice (1-#,N,C): 1
+
+List of Windows Servers
+
+(0) win-l2b821bsvk4, Display name: win-l2b821bsvk4 Windows Server, 0 instances
+(B) Back to Step 1
+(C) Cancel and exit
+
+Enter the server number, server name, or servername\named_instance to monitor
+B to go back, C to Cancel and exit
+
+### 0, server, server\name, B, C: 0
+
+> No SQL Server instances found.
+If it's a named instance (i.e., win-l2b821bsvk4\instance_2), enter just the instance name (i.e., "instance_2").
+If it's the default instance, leave it blank.
+
+### Named instance (or Enter, "B" to go back, "C" to cancel):
+
+### Type new Display name (Enter to use "win-l2b821bsvk4 SQL Server", or "N" to exit):
+</pre>
+
+<p>Next, choose the credential to use to monitor the SQL Server instance.</p>
+<p>In this case, we'll use the same credential to monitor the instance as the one we're using to monitor the server.</p>
+
+<pre>
+--- Add New SQL Server Instance ---
+
+This will involve 2 steps:
+
+Step 1: Select a SQL Server instance
+Step 2: Select monitoring credentials
+
+--- Step 1: Select a SQL Server Instance
+
+(1) SQL Server instance name: [win-l2b821bsvk4]
+(2) Display name: [win-l2b821bsvk4 SQL Server]
+(3) SQL Server connection security settings: [Encrypt: AUTO-DETECT, Trust Server Cert: AUTO-DETECT]
+(4) Schedule blackout start date (when to pause polling): []
+(5) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(N) Next: Select monitoring credentials
+(C) Cancel and exit
+
+### Enter choice (1-#,N,C): n
+
+--- Step 2: Select monitoring credentials for win-l2b821bsvk4
+
+(1) Allow Handymon to create the monitoring login on win-l2b821bsvk4.
+    Handymon will prompt you for a login with sysadmin permissions on win-l2b821bsvk4,
+    create the new credential, then grant it permssions.
+(2) Scan logins on win-l2b821bsvk4 for a match.
+    Handymon will prompt you for a login with sysadmin permissions on win-l2b821bsvk4,
+    analyze logins on the instance, show matching Handymon credentials, then let you choose
+    which credential to use.
+(3) Choose which Handymon credential to monitor win-l2b821bsvk4 with.
+    Handymon will prompt you for which credential to when monitoring win-l2b821bsvk4,
+    then (optionally) verify the credentials work.
+(B) Go Back
+
+### Enter (1 - 3, or "B" to go back): 1
+
+Choose or enter a credential to connect to the win-l2b821bsvk4 instance:
+
+(0) handymon, Display name: mssql-handymon
+(1) win-l2b821bsvk4\handymon, Display name: win-win-l2b821bsvk4\handymon (used 1 x)
+(B) Go Back
+
+### Enter the credential number --OR-- a new login name ("B" Go back): 1
+</pre>
+
+<p>Next, enter a SQL Server or Windows login (e.g., sa, TARGET\admin, etc.) with sysadmin permissions on the target instance.</p>
+<p>This login will enable Handymon to create the credential to be used for monitoring.</p>
+
+<pre>
+In order to create the login win-l2b821bsvk4\handymon on win-l2b821bsvk4,
+handymon will need to use credentials with sysadmin permissions.
+Enter a login with sysadmin permissions on win-l2b821bsvk4 (domain\ad_account, SQL login name, sa, etc.).
+These credentials will not be stored.
+
+### Sysadmin login: sa
+### Password: SA_PASSWORD_HERE
+
+Connecting to win-l2b821bsvk4 with sa credentials. One moment ...
+Autodetecting security settings
+Trust server certificate: TRUE, Force encryption: TRUE
+
+Verifying sa is a sysadmin. One moment ...
+sa is a sysadmin
+
+Seeing if win-l2b821bsvk4\handymon is already on win-l2b821bsvk4 ...
+Login win-l2b821bsvk4\handymon does not exist on win-l2b821bsvk4
+Creating login 'win-l2b821bsvk4\handymon'
+Login 'win-l2b821bsvk4\handymon' created on win-l2b821bsvk4
+Granting login win-l2b821bsvk4\handymon minimal permissions to the win-l2b821bsvk4 instance
+Creating database user win-l2b821bsvk4\handymon on win-l2b821bsvk4 / msdb
+Granting login win-l2b821bsvk4\handymon minimal database permissions on win-l2b821bsvk4 / msdb
+
+### Press enter to add the instance to be monitored, or E to exit:
+Done!
+</pre>
+<p>Handymon sends an alert the first time it polls something, so you should receive an alert soon.</p>
+Here's an example from slack:<br />
+<a href="images/sql-server-added-slack-notification.jpg" target="_blank">
+<img src="images/sql-server-added-slack-notification.jpg" width="400" alt="Test slack message example" /></a><br />
+<br />
+Here's an example from email:<br />
+<a href="images/sql-server-added-email-notification.jpg" target="_blank">
+<img src="images/sql-server-added-email-notification.jpg" width="400" alt="Test email message example" /></a><br />
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+First Time Setup
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</first_time_setup.htm>]-->
+
+<!--[<preparing_windows_monitoring.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="preparing_windows_monitoring.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Verify A Windows Server or Workstation can be Monitored</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+From the Handymon server, perform each action until all four succeed. We do not recommend making more than one change at a time. So, make one change, then at the <strong>Add a New Windows Monitor</strong> menu, choose <strong>T</strong> to test the monitor you're trying to add, until all tests are successful.<br />
+<br />
+Actions from Handymon server:<br />
+<br />
+<ol>
+	<li><code>ping computername</code></li>
+	<li><code>wbemtest.exe</code> / Note that most of the IWBemServices buttons are grayed out / Connect button / Change Namespaces from "root\cimv2" to "\\NEW_SERVER_NAME\root\cimv2" / User: handymon (or NEW_SERVER_NAME\handymon) / Password: handymon_password / Connect button
+	<li>Query button / Enter query: <code>select * from Win32_LogicalDisk</code> / Apply button / You should see at least one disk</li>
+	<li>Query button / Enter query: <code>select * from Win32_NTLogEvent where LogFile = 'System'</code> / Apply button / You should see lots of events (click the "Close" button to stop)</li>
+</ol>
+
+Troubleshooting Steps for Windows 10 and Windows Server. Except for Step #1, perform all of the following troubleshooting steps on the remote machine, NOT on the machine Handymon is running on.<br />
+<br />
+<ol>
+<li>If Handymon was unable to ping (from step 1 above), allow ping traffic on the target / remote machine:
+	<ul>
+		<li>Open a command prompt with elevated permissions:<br />
+<code>netsh advfirewall firewall add rule name="Handymon - Allow ping traffic: ICMPv4-In" protocol=icmpv4:8,any dir=in action=allow<br />
+netsh advfirewall firewall add rule name="Handymon - Allow ping traffic: ICMPv6-In" protocol=icmpv6:8,any dir=in action=allow</code>
+		</li>
+		<li>Note: This is not necessary for Handymon to function, as it does not ping the remote server to check its status. This step merely verifies that the current machine has network connectivity to the remote machine.</li>
+	</ul>
+</li>
+</ol>
+Actions from the target / remote machine (NOT the machine Handymon is running on):<br />
+<br />
+<ol start = "2">
+<li>Verify that the WMI service is running
+	<ul><li>Control Panel / System and Security / Administrative Tools / Services / Windows Management Instrumentation</li></ul>
+</li>
+<li>Verify that the Remote Procedure Call service is running
+	<ul><li>Control Panel / System and Security / Administrative Tools / Services / Remote Procedure Call (RPC)</li></ul>
+</li>
+<li>Restart the Windows Management Instrumentation service
+<ul>
+	<li>Control Panel / System and Security / Administrative Tools / Services / Windows Management Instrumentation / Restart</li>
+	<li>- OR - Run these commands from a command prompt with elevated permissions<br />
+		(Answer "Y" if it asks to stop other services)<br />
+		<code>net stop winmgmt && net start winmgmt</code>
+	</li>
+</ul>
+<li>Update Windows Management Instrumentation configuration settings
+<ul>
+	<li>Start / Run / wmimgmt.msc / Right-click WMI Control (Local) / Properties / Security tab / Open "Root" / Highlight "CIMV2" / Click Security button<br />
+/ If the handymon account is listed, skip to the next step<br />
+/ If the handymon account is not listed / Add button / Enter object name field: handymon / Check Names button / Ok button / Click handymon username to highlight it / Enable "Allow Enable Account" and "Allow Remote Enable" / Ok (to close the Security dialog) / Ok (to close WMI Control Properties dialog)</li>
+</ul>
+</li>
+<li>Enable Windows Management Instrumentation WMI-In and DCOM-In Firewall Rules (final step to make it work for Windows Server 2022)
+<ul>
+    <li>Launch the Windows Firewall application:
+        <ul>
+        <li>From the command line: <code>Start / Run / cmd.exe / wf.msc</code></li>
+- OR -
+        <li>Start / Run / "Windows Firewall"</li>
+        </ul>
+    </li>
+	<li>At the Windows Firewall dialog / click Inbound Rules on the left / Scroll down to "Windows Management Instrumentation (WMI-In)" / Highlight both "Windows Management Instrumentation (WMI-In)" and "Windows Management Instrumentation (DCOM-In)" / Right-click one of them / Enable Rule</li>
+</ul>
+</li>
+<li>Verify that the Windows Firewall allows WMI traffic. Choose one:
+	<ul>
+	<li>Use the Windows Firewall to allow traffic over port 135</li>
+	<li>- OR - Run this command from a command prompt with elevated permissions:<br />
+		<code>netsh advfirewall firewall add rule name="Handymon - Allow WMI traffic (port 135)" protocol=TCP dir=in localport=135 action=allow</code>
+	</li>
+	</ul>
+</li>
+<li>Verify that the Windows Firewall allows Remote Procedure Call (RPC) traffic. Choose one:
+	<ul>
+	<li>Use the Windows Firewall to allow traffic over ports 49152-65535</li>
+	<li>- OR - Run this command from a command prompt with elevated permissions:<br />
+		<code>netsh advfirewall firewall add rule name="Handymon - Allow Dynamic RPC traffic (ports 49152-65535)" protocol=TCP dir=in localport=49152-65535 action=allow</code>
+	</li>
+	</ul>
+</li>
+<li>Update DCOM configuration
+<ul>
+	<li>Start / Run / dcomcnfg.exe / Navigate to Component services / Computers / Right-click "My Computer" / Properties / COM Security tab / For all areas ("Access Permissions" and "Launch and Activiation Permissions" areas), under both Edit Limits and Edit Default buttons / Add handymon account if it's not listed / Enable all "Allow" permissions (Local Access, Remote Access, Local Launch, Remote Launch, Local Activation, Remote Activation) / Security button / Add the handymon account / enable all permissions / Ok (to close the dialog box)</li>
+	<li>Note: "Launch and Activation Permissions" is necessary to retrieve any data via WMI</li>
+	<li>Note: "Access Permissions" is necessary for Windows Server to retrieve disk information</li>
+	<li>Start / Run / dcomcnfg.exe / Navigate to Component services / Computers / Right-click "My Computer" / Properties<br />
+        <em>If "DCOM Config" does not exist, skip this step.</em><br />
+        / Otherwise, continue: / DCOM Config / Find Windows Management and Instrumentation / Right-click Windows Management and Instrumentation / Properties / Security tab / Launch and Activation Permissions / Customize / Edit button / Add Handymon account (even if Administrators group is listed) / With Handymon selected, enable all permissions (Local launch, Remote launch, Local activation, Remote activation) / Ok button / Ok button</li>
+</ul>
+</li>
+<li>Update Group Policy Editor settings
+<ul>
+	<li>Open the Group Policy Editor (gpedit.msc) / Computer Configuration / Administrative Templates / Network / Network Connections / Windows Defender Firewall / Domain Profile / Right-click "Windows Firewall: Allow inbound remote administration exception" / Edit / Click the "Enabled" radio button / Ok</li>
+</ul>
+</li>
+<li>Update Local Security Policy settings
+<ul>
+	Even if the <code>select * from Win32_LogicalDisk</code> query works, <code>select * from Win32_NTLogEvent where LogFile = 'System'</code> may not return results.<br />
+    This issue can occur when executing the <code>Win32_NTLogEvent</code> query using wbemtest.exe on a remote system or when allowing Handymon to poll for Windows restart information. To resolve this:<br />
+	<li>Open the Local Security Policy settings (secpol.msc) / Security Settings / Local Policies / User Rights Assignment / Double-click Manage auditing and security log.</li>
+	<li>Even if "Administrators" is already listed, click "Add User or Group", add the Handymon account, and click OK to apply the changes.</li>
+    If <code>select * from Win32_NTLogEvent where LogFile = 'System'</code> still doesn't return results:
+    <li>Open Registry Editor (run regedit).</li>
+	<li>Navigate to HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</li>
+	<li>Create or set LocalAccountTokenFilterPolicy (DWORD) to 1. This should take effect within 60 seconds.</li>
+    If <code>select * from Win32_NTLogEvent where LogFile = 'System'</code> still doesn't return results:
+    <li>Apply changes: open an elevated command prompt, then run <code>gpupdate /force</code></li>
+</ul>
+</li>
+<li>(TESTING) Disable UAC Completely
+<ul>
+	<li>Open the Local Security Policy settings (secpol.msc) / Security Settings / Local Policies / Security Options / Set "User Account Control: Run all administrators in Admin Approval Mode" to "Disabled".</li>
+    Then restart the machine.<br />
+    If that doesn't work:
+	<li>Set "User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode" to "Elevate without prompting".</li>
+    Then restart the machine.<br />
+</ul>
+</li>
+</ul>
+</li>
+<li>Check physical network connectivity.</li>
+<li>Look into your network infrastructure.</li>
+
+</ol>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Verify Target Server
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</preparing_windows_monitoring.htm>]-->
+
+<!--[<import_monitors.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="import_monitors.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Import New Handymon Monitors</h3>
+
+<div class="card-tools">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+    <i class="fas fa-minus"></i>
+    </button>
+    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+    <i class="fas fa-times"></i>
+    </button>
+</div>
+</div>
+<div class="card-body">
+
+To minimize time setting up monitoring, Handymon can import new Windows server and SQL Server instances.<br />
+Hanymon reads and processes the import file one line at a time, top to bottom. The import file is named "import_handymon_monitors.txt."<br />
+<br />
+Resources (Windows server and SQL Server instances) that already exist in Handymon will be skipped. Only new resources will be added.<br />
+<br />
+When adding resources, Handymon will use the most recent credential specified by the "set credential" command.<br />
+<br />
+It is best to list Windows servers before SQL Server instances. This is because the Windows server must exist in Handymon before its SQL Server instance can be added.<br />
+<br />
+<strong>Credentials</strong><br />
+Credentials are set using the "set credential" command.<br />
+Credentials used in this file must already exist in Handymon. Use the "Create new credential" in the Handymon configuration menu to add new credentials.<br />
+<br />
+<h1>h1 H1</h1>
+<h2>h2 H2</h2>
+<h3>h3 H3</h3>
+<h4>h4 H4</h4>
+<h5>h5 H5</h5>
+<h6>h6 H6</h6>
+<h3>Summary of Commands</h3>
+<strong>set credential windows_server_or_sql_login</strong><br />
+This tells the import process which Windows username or SQL Server login to use for subsequent servers. A credential will remain in effect until a new "set credential" command is used. If you are using a domain account, you must include the domain name.<br />
+<br />
+If a credential matches more than one known in Handymon, Handymon will list them and prompt you for which one to use.<br />
+<br />
+Examples:<br />
+<code>set credential domainname\handymon</code><br />
+<code>set credential handymon</code><br />
+<br />
+<strong>add win_servers</strong><br />
+This tells the import process that subsequent resources are Windows servers.<br />
+<br />
+<strong>add mssql_instances</strong><br />
+This tells the import process that subsequent resources are SQL Server instances.<br />
+<br />
+Simple example of <code>import_handymon_monitors.txt</code>:
+<pre>
+# Simple example of import_handymon_monitors.txt
+
+# Use this credential for all Windows and SQL Server instances
+
+set credential domainname\handymon
+
+# List Windows servers to be added
+
+add win_servers
+
+server_1
+server_2
+server_3
+
+# List SQL Server instances to be added
+
+add mssql_instances
+
+server_1
+server_2\named_instance
+server_3
+</pre>
+Complex example of <code>import_handymon_monitors.txt</code>:
+<pre>
+# Complex example of import_handymon_monitors.txt
+
+# Set options
+
+# - just in case
+# in case retry is the only option, set a max of 5 attempts -- we don't want to be caught in an infinite loop -- default=10, highest = 100
+set option max_auto_retry 5
+
+set option if_credential_missing skip,create
+set option if_resource_exists skip,test_poll # - default: "set option if_resource_exists skip"
+set option if_resource_not_exists create,skip,test_poll
+set option if_test_poll_fails create,skip,retry
+set option if_test_poll_succeeds create,skip,retry
+
+# - stop_import: do not import any more resources
+stop_import
+
+# - resume_import: start importing resources from here
+resume_import
+
+# Use this credential, create if "set option if_resource_not_exists create" is used
+
+set credential handymon
+
+# Start adding new Windows servers
+
+set resource_type win_server
+
+server_1
+server_2
+server_3,Windows Server server_3
+server_4
+
+# Now, use this credential: "domainname\handymon"
+# Note that we're still specifying Windows servers because the last "add" command was "add win_servers."
+# Since "add win_servers" was the last command, and Windows cannot use SQL Server credentials, Handymon
+# will use only Windows credentials.
+
+set credential domainname\handymon
+
+server_5
+server_6
+
+# Now, start adding SQL instances:
+
+set resource_type mssql_instance
+
+server_1
+server_2\named_instance
+
+# Now, use this credential
+
+set credential sql_username
+
+server_3
+
+# Now, use this credential: "domainname\sql_username"
+
+set credential domainname\sql_username
+
+server_4
+
+# Now, start adding Windows servers
+
+set resource_type win_server
+
+DESKTOP-3RK79RP
+localhost
+server_name_1
+server_name_2
+</pre>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Import Monitors
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</import_monitors.htm>]-->
+
+<!--[<features.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="features.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Features</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+<strong>Alert Methods</strong><br />
+You can send alerts to email or slack.<br />
+<br />
+<strong>Poll Frequency</strong><br />
+By default, Handymon adjusts how many resources are polled based on the number of processors available. This is usually very conservative and places little demand on the system.<br />
+The default uses this formula:<br />
+1-4 processors: Poll 2 resources at a time. This is adequate for up to 50-60 resources.<br />
+If more than 4 processors: Find # of processors * 0.75, take the integer of that, and poll that many resources at a time.
+You can set this manually by adjusting the Config menu / max_concurrent_polls value. I have found a value of 4 or 5 does not tax the server too much.<br />
+Be advised that updating this value will likely not take effect immediately. Since this value probably won't change often, Handymon will read it only about 5% of the time.
+<br />
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Features
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</features.htm>]-->
+
+<!--[<configure.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="configure.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">How to Configure Handymon</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+Choose one of the options:<br />
+<!-- begin replace [href="#] [href="] -->
+<li><a href="#credentials.htm">Credentials</a></li>
+<li><a href="#monitors.htm">Add Monitors</a> (TODO)</li>
+<li><a href="#import_monitors.htm">Import Monitors</a></li>
+<li><a href="#delete_monitors.htm">Delete Monitors</a> (TODO)</li>
+<li><a href="#edit_monitor.htm">Edit Monitor</a> (TODO)</li>
+<li><a href="#additional_commands.htm">Additional Dommands</a> (TODO)</li>
+<li><a href="#db_alters.htm">Database Alters</a> (TODO)</li>
+<li><a href="#alert_rules.htm">Update Alert Rules</a></li>
+<li><a href="#update_configuration_values.htm">Update Configuration Values</a></li>
+<!-- end replace -->
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Configure Handymon
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</configure.htm>]-->
+
+
+<!--[<credentials.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="credentials.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Credentials</h3>
+
+<div class="card-tools">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+    <i class="fas fa-minus"></i>
+    </button>
+    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+    <i class="fas fa-times"></i>
+    </button>
+</div>
+</div>
+<div class="card-body">
+Windows and SQL Server credentials must be created before you can poll Windows servers, Windows disks, or SQL Server instances. You can create or edit Windows and SQL Server credentials from the configuration menu.<br />
+<br />
+Entering an Windows account using a backslash ("\") will cause Handymon to consider it a domain account or a Windows account local to that machine. Otherwise, it will consider it a local account on any Windows machine.<br />
+<br />
+<strong>Create New Credential</strong><br />
+Create a new Windows or SQL Server credential to be used by a Windows or SQL server monitor.<br />
+Choose the <strong>Create New Credential</strong> menu entry.<br />
+Choose the <strong>Windows authentication</strong> credential.<br />
+Enter the Windows handymon account credentials.<br />
+For Active Directory accounts, use this format: domainname\handymon<br />
+For local Windows accounts, use the same format: handymon -or- server_1\handymon<br />
+<br />
+<strong>Update existing credential</strong><br />
+Update the username, password, and toggle between Windows and SQL Server credentials.<br />
+<br />
+<strong>Delete unused credential</strong><br />
+List all credentials not in use and prompt for which one to delete.<br />
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Credentials
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</credentials.htm>]-->
+
+<!--[<configuration_values.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="configuration_values.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Update Configuration Values</h3>
+</div>
+<div class="card-body">
+<p><strong>Disks</strong></p>
+
+<!-- begin replace [href="#] [href="] -->
+<p>Review the section on <a href="#disk_alert_thresholds.htm">Disk Alert Thresholds</a>.</p>
+<!-- end replace -->
+
+<p><strong>Alert Methods</strong></p>
+
+<p><strong>SQL Server Agent Jobs</strong></p>
+
+<p><strong>Poll for Restarts</strong></p>
+
+<p><code>win_server_check_restart_interval_sec</code> This value is how often Handymon will check for server restarts. The default is to check every hour (3600 sec). You can set it to poll more often (down to 1 to poll the most often), but it can take several minutes, and setting it too low will slow down all other resource polls (unless you are monitoring very few Windows servers). Handymon polls the Event Viewer logs for restarts. If the Event Viewer log is not cleared very often, it can take longer. I've seen it take as long as 10-20 minutes for a single poll. For that reason, Handymon is configured to check for restarts on only one server at a time.</p>
+
+<p><strong>Allow for Duplicate Resources</strong></p>
+
+<p><strong>Polling Frequency</strong></p>
+<p><code>poll_interval_sec</code> Each resource will be polled at this interval normally (default: every 300 seconds = 5 minutes).</p>
+<p><code>frequent_poll_interval_sec</code> If a resource triggers an alert, Handymon will change it to poll more frequently (default: every 60 seconds = 1 minute).</p>
+<p><code>frequent_poll_duration_sec</code> If Handymon starts polling a resource more frequently, it will change back to it's normal polling interval after this many seconds (default: 900 seconds = 15 minutes).</p>
+
+<p><strong>Configure Slack Alerts</strong></p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Update Configuration Values
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</configuration_values.htm>]-->
+
+
+
+<!--[<setting_timezone.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="setting_timezone.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Setting the Timezone</h3>
+</div>
+<div class="card-body">
+<p><strong>Timezone</strong></p>
+<p>To set the Timezone:</p>
+
+<p>From the main menu, choose <strong>20 Update timezone</strong>. From there, you can configure the timezone Handymon will use when it shows the local time of events.</p>
+
+<p>The first menu lets you specify which global region you're in.</p>
+<pre>
+--- Update Timezone Information
+
+(0) Africa
+(1) America <-- current timezone region
+(2) Antarctica
+(3) Arctic
+(4) Asia
+(5) Atlantic
+(6) Australia
+(7) Europe
+(8) Indian
+(9) Pacific
+(10) UTC
+
+### Enter your region number (Enter to exit):
+</pre>
+
+<p>The subsequent menu lets you specify the timezone you're in, and indicates your current selection.</p>
+
+<pre>
+Select your time zone within the America region
+
+(0) America/Adak
+(1) America/Anchorage
+(2) America/Anguilla
+...
+(35) America/Chicago <-- current timezone
+...
+(140) America/Whitehorse
+(141) America/Winnipeg
+(142) America/Yakutat
+
+### Enter your timezone number (Enter to exit):
+</pre>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Setting the Timezone
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</setting_timezone.htm>]-->
+
+
+<!--[<poll_interval_configuration.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="poll_interval_configuration.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Configure Polling Intervals</h3>
+</div>
+<div class="card-body">
+<p><strong>Poll for Windows Server Restarts</strong></p>
+<p>Configuration label: <code>check_win_server_restarts_interval_sec</code></p>
+<p>Specifies how often Handymon checks for Windows server restarts. The default is 14400 seconds (4 hours). Handymon queries the event log for restarts, which I've found can take up to 20 minutes. Because of how long it takes, and how rarely it happens, this is single threaded. In other words, it will check only one server at a time.</p>
+
+<p><strong>Standard Poll Interval</strong></p>
+<p>Configuration label: <code>poll_interval_sec</code></p>
+<p>Sets how often resources are polled normally. The default is every 300 seconds (5 minutes). Handymon makes adjustments to this time on the fly by averaging the number of seconds it took to poll the previous 5 times, then subtracting that from 5 minutes. So, if takes an average of 23 seconds to poll the resource, it will be checked every 4 min 37 sec.</p>
+
+<p><strong>Frequent Poll Interval</strong></p>
+<p>Configuration label: <code>frequent_poll_interval_sec</code></p>
+<p>Sets how often resources are polled when interval changes to use the frequent poll interval. The default is 60 seconds. Handymon changes from poll_interval_sec to frequent_poll_duration_sec when the resource changes. For example, if the resource changes from online to offline, or offline to online, it will change from being polled every 5 minutes (poll_interval_sec) to every 60 seconds (frequent_poll_interval_sec). Once there have been no more changes for 15 minutes (frequent_poll_duration_sec), Handymon will revert back to polling every 5 minutes.</p>
+
+<p><strong>Frequent Poll Duration</strong></p>
+<p>Configuration label: <code>frequent_poll_duration_sec</code></p>
+<p>Sets how long to use the frequent_poll_interval_sec before switching back to poll_interval_sec. The default value is 900 seconds (15 minutes). For example, if using the defaults, if the resource changes from online to offline, polling will change from every 5 minutes to every 60 seconds for the next 15 minutes. If the resource changes again, polling will occur every 60 seconds for the next 15 minutes from that time. Once there have been no more changes after 15 minutes, Handymon will revert back to polling every 5 minutes.</p>
+<p>The idea is for Handymon to poll more frequently for a while after it detects a change, until things settle down.</p>
+
+<p><strong>Maximum Concurrent Polls</strong></p>
+<p>Configuration label: <code>max_concurrent_polls</code></p>
+<p>Defines the maximum number of resources Handymon will poll at the same time. A value of 0 allows Handymon to auto-select based on the number of processors, with a minimum of 2. If you raise this value, it's recommended to monitor system performance (e.g., Task Manager) after changing to confirm system stability.</p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Configure Polling Intervals
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</poll_interval_configuration.htm>]-->
+
+
+<!--[<disk_alert_thresholds.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="disk_alert_thresholds.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Disk Alert Thresholds</h3>
+</div>
+<div class="card-body">
+<p><strong>Disk Alert Thresholds</strong></p>
+
+<p><code>alert_on_initial_disk_poll</code> (default is <strong>TRUE</strong>): The first time Handymon polls disks, this setting controls whether to send an alert.</p>
+
+<p><code>disk_out_of_space_le_bytes</code> (default is <strong>10240</strong>): A disk with less than or equal than this many bytes free will trigger an "out of disk space" alert.</p>
+
+<p>The settings below (smallest_disk_size_* and largest_disk_size_*) are how Handymon gauges when to send warning or critical alerts. It interpolates thresholds (both warning and critical) based on the smallest and largest total disk size values (e.g., smallest_disk_size_total_gb and largest_disk_size_total_gb).</p>
+
+<table>
+<tr>
+<td>
+<p><code>smallest_disk_size_warning_gb</code> (default is <strong>30</strong>)</p>
+<p><code>smallest_disk_size_critical_gb</code> (default is <strong>20</strong>)</p>
+<p><code>smallest_disk_size_total_gb</code> (default is <strong>200</strong>)</p>
+</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>
+<p><code>largest_disk_size_warning_gb</code> (default is <strong>75</strong>)</p>
+<p><code>largest_disk_size_critical_gb</code> (default is <strong>60</strong>)</p>
+<p><code>largest_disk_size_total_gb</code> (default is <strong>1500</strong>)</p>
+</td>
+</tr></table>
+
+<br />
+This image shows how the disk alert formula, largest_disk_size_*, and smallest_disk_size_* values are used to trigger warning and critical disk alerts.<br />
+<a href="images/free-disk-space-alert-chart.jpg" target="_blank">
+<img src="images/free-disk-space-alert-chart.jpg" width="800" alt="Free disk space alert chart" /></a><br />
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Disk Alert Thresholds
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</disk_alert_thresholds.htm>]-->
+
+<!--[<setting_org_name.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="setting_org_name.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Setting the Organization Name</h3>
+</div>
+<div class="card-body">
+<p><strong>Setting Organization Name</strong></p>
+<p>To set the Organization Name:</p>
+<p>From the main menu, choose <strong>1 Set organization info</strong>. From there, you can configure the Organization Name or Organization Display Name.</p>
+<p>You can also set blackout dates for all items being monitored from this menu. In other words, setting blackout stop and start dates at this level will apply to all resources, pausing and resuming monitoring for the specified period.</p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Setting Organization Name
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</setting_org_name.htm>]-->
+
+<!--[<configuring_email.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="configuring_email.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Update Email Alert Information</h3>
+</div>
+<div class="card-body">
+<p><strong>Update Email Alert Information</strong></p>
+<p>To enable email alerts and configure email authentication:</p>
+<p>From the main menu, choose <strong>26 Update email alert information</strong>.</p>
+<p>These settings, especially <strong>email_auth_host</strong>, <strong>email_auth_username</strong>, and <strong>email_auth_password</strong>, are for configuring the authentication details required for Handymon to send email alerts through your email server.</p>
+<p>Once you've configured your email authentication information, use <strong>(T) Send a test email</strong> to verify it works, set <strong>enable_email_alerts</strong> to TRUE, then <strong>(S) Save values and exit</strong>.</p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Configuring Email
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</configuring_email.htm>]-->
+
+<!--[<configuring_slack.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="configuring_slack.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Configuring Slack</h3>
+</div>
+<div class="card-body">
+<p><strong>Configuring Slack</strong></p>
+<p>From the main menu, choose <strong>14 Update slack configuration</strong>, then follow these steps:</p>
+<p>To configure Slack in Handymon for real-time alerts on monitoring events (e.g., server issues or disk space warnings), follow these steps in the "Update Slack Information" menu. Proper setup ensures timely notifications to your team, reducing downtime by enabling quick responses without constant manual checks.</p>
+
+<p>Here is an example Slack configuration:</p>
+<pre>
+--- Update Slack Information
+
+All items changed will have an asterisk.
+
+(0) enable_slack_alerts: TRUE
+(1) default_slack_channel: #general
+(2) slack_token: xoxX-SLACK-TOKEN-GOES-HERE
+(T) Send a test slack message
+(S) Save values and exit
+(C) Cancel changes and exit
+</pre>
+
+<p>Enter your slack token, slack channel, then "T" to send a test message using those values. Once you get it working, enable slack alerts, then "S" to save the settings.</p>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Configuring Email
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</configuring_slack.htm>]-->
+
+
+<!--[<add_win_monitors.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="add_win_monitors.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Adding Windows Monitors</h3>
+</div>
+<div class="card-body">
+<strong>Add Windows Server to Monitor</strong><br />
+
+<br />
+<p>Choose <strong>(28) Monitor new Windows Server</strong>.</p>
+<p>Choose <strong>(1) Windows server name</strong>, enter the server name you wish to monitor, then enter the display name you wish to use, or press Enter to use the default display name.</p>
+<p>If you are already monitoring a SQL Server instance, and want to start monitoring the Windows server it's on, choose <strong>(2) Select Windows server associated with SQL</strong>. An example of this is a little further down.</p>
+<p>If you created the same credential for a different Windows monitor, choose <strong>(4) Use existing Windows username</strong>. Otherwise, choose <strong>(5) Create a new Windows username</strong>. I recommend using "TARGET\handymon" instead of just "handymon", where TARGET is either your Active Directory domain name -OR- your Windows server/workstation name.</p>
+Enter the password for "TARGET\handymon" twice.<br />
+Enter a display name for new credential, or press Enter to use the default display name.<br />
+<br />
+<p>Choose <strong>(T) Test monitor</strong> to verify Handymon can connect to and monitor the Windows server.</p>
+<ul>
+<!-- begin replace [href="#] [href="] -->
+<li>If it's unable to connect, or any tests fail, review the <a href="#preparing_windows_monitoring.htm">Verify A Windows Server or Workstation can be Monitored</a> section of this documentation.</li>
+<!-- end replace -->
+</ul>
+<br />
+<p>Choose <strong>(A) Add new monitor and exit</strong> to save the monitor and exit. Handymon will soon start monitoring the Windows machine.</p>
+Here is an example of setting up a new Windows monitor.<br />
+<pre>
+--- Add a New Windows Monitor
+
+[*] (1) Enter Windows server name: []
+[ ] (2) Select Windows server associated with SQL: [1 available]
+(3) Display name: []
+[*] (4) Use existing Windows username: [select one]
+[ ] (5) Create new Windows username: []
+    (6) Password: [] (required for new Windows username)
+    (7) Credential display name: [] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (#,T,A,C): 1
+
+Type new Windows server name ("N" to exit): win-prod-1
+
+Type new Display name (Enter to use "win-prod-1 Windows Server", or "N" to exit):
+
+Please choose one of the menu entries.
+
+--- Add a New Windows Monitor
+
+[*] (1) Enter Windows server name: [win-prod-1]
+[ ] (2) Select Windows server associated with SQL: [1 available]
+(3) Display name: [win-prod-1 Windows Server]
+[*] (4) Use existing Windows username: [select one]
+[ ] (5) Create new Windows username: []
+    (6) Password: [] (required for new Windows username)
+    (7) Credential display name: [] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (#,T,A,C): 4
+
+(0) admin, Display name: win-admin
+(1) admin, Display name: win-admin-1
+(2) sql01\administrator, Display name: win-sql01\administrator (used 1 x)
+(3) WIN-03KD77093JP\handymon, Display name: win-WIN-03KD77093JP\handymon (used 1 x)
+(4) WIN-7STS6GU7V7U\handymon, Display name: win-WIN-7STS6GU7V7U\handymon (used 1 x)
+(5) WIN-E69DKNA6KF9\administrator, Display name: win-WIN-E69DKNA6KF9\administrator (used 1 x)
+(6) win-l2b821bsvk4\handymon, Display name: win-win-l2b821bsvk4\handymon (used 1 x)
+
+### Enter the credential number (Enter to exit): 2
+Please choose one of the menu entries.
+
+--- Add a New Windows Monitor
+
+[*] (1) Enter Windows server name: [win-prod-1]
+[ ] (2) Select Windows server associated with SQL: [1 available]
+(3) Display name: [win-prod-1 Windows Server]
+[*] (4) Use existing Windows username: [sql01\administrator]
+[ ] (5) Create new Windows username: []
+    (6) Password: [] (required for new Windows username)
+    (7) Credential display name: [] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (#,T,A,C): t
+
+Testing connection to win-prod-1 using new credentials (username: sql01\administrator) ...
+Successful: TRUE
+
+--- Add a New Windows Monitor
+
+(1) Windows server name: [win-prod-1]
+(2) Display name: [win-prod-1 Windows Server]
+[ ] (3) Use existing Windows username: []
+[*] (4) Create new Windows username: [sql01\administrator]
+    (5) Password: [] (required for new Windows username)
+    (6) Credential display name: [] (required for new Windows username)
+[ ] (7) Use no credentials
+(8) Schedule blackout start date (when to pause polling): []
+(9) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (1-9,N,C): a
+
+New Windows server "win-prod-1" ("win-prod-1 Windows Server") added.
+</pre>
+
+<p>Here is an example of setting up a new Windows monitor, with an existing SQL Server monitor.</p>
+
+<pre>
+--- Add a New Windows Monitor
+
+[*] (1) Enter Windows server name: []
+[ ] (2) Select Windows server associated with SQL: [1 available]
+(3) Display name: []
+[*] (4) Use existing Windows username: [select one]
+[ ] (5) Create new Windows username: []
+    (6) Password: [] (required for new Windows username)
+    (7) Credential display name: [] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (#,T,A,C): 2
+
+(0) WIN-E69DKNA6KF9, Display name: WIN-E69DKNA6KF9 Windows Server
+(C) Cancel and exit
+
+### Windows Server to monitor (#, or C to cancel and return the menu): 0
+
+--- Add a New Windows Monitor
+
+[ ] (1) Enter Windows server name: []
+[*] (2) Select Windows server associated with SQL: [WIN-E69DKNA6KF9]
+(3) Display name: [WIN-E69DKNA6KF9 Windows Server]
+[*] (4) Use existing Windows username: [select one]
+[ ] (5) Create new Windows username: []
+    (6) Password: [] (required for new Windows username)
+    (7) Credential display name: [] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (#,T,A,C): 5
+
+Enter the new Windows username (domain\windowsuser, computername\localwindowsuser, or windowsuser)
+### Type it here (or Enter to exit): WIN-E69DKNA6KF9\handymon
+### Enter the password (Enter to exit):
+### Enter the password again (Enter to exit):
+### Credentials Display name (or press Enter for default: "win-WIN-E69DKNA6KF9\handymon"):
+
+
+--- Add a New Windows Monitor
+
+[ ] (1) Enter Windows server name: []
+[*] (2) Select Windows server associated with SQL: [WIN-E69DKNA6KF9]
+(3) Display name: [WIN-E69DKNA6KF9 Windows Server]
+[ ] (4) Use existing Windows username: []
+[*] (5) Create new Windows username: [WIN-E69DKNA6KF9\handymon]
+    (6) Password: [*********] (required for new Windows username)
+    (7) Credential display name: [win-WIN-E69DKNA6KF9\handymon] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (#,T,A,C): t
+
+Testing connection to WIN-E69DKNA6KF9 using new credentials (username: WIN-E69DKNA6KF9\handymon) ...
+Successful: TRUE
+
+--- Add a New Windows Monitor
+
+[ ] (1) Enter Windows server name: []
+[*] (2) Select Windows server associated with SQL: [WIN-E69DKNA6KF9]
+(3) Display name: [WIN-E69DKNA6KF9 Windows Server]
+[ ] (4) Use existing Windows username: []
+[*] (5) Create new Windows username: [WIN-E69DKNA6KF9\handymon]
+    (6) Password: [*********] (required for new Windows username)
+    (7) Credential display name: [win-WIN-E69DKNA6KF9\handymon] (required for new Windows username)
+[ ] (8) Use no credentials
+(9) Schedule blackout start date (when to pause polling): []
+(10) Schedule blackout end date (when to resume polling): []
+     Polling will be enabled (no blackout period set).
+(T) Test monitor
+(A) Add new monitor and exit
+(C) Cancel and exit
+
+### Enter choice (1-9,N,C): a
+
+New Windows credential "WIN-E69DKNA6KF9\handymon" added.
+
+New Windows server "WIN-E69DKNA6KF9" ("WIN-E69DKNA6KF9\handymon") added.
+</pre>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Adding Windows Monitors
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</add_win_monitors.htm>]-->
+
+
+<!--[<add_disk_monitors.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="add_disk_monitors.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Adding Disk Monitors</h3>
+</div>
+<div class="card-body">
+<p><strong>Adding Disk Monitors</strong></p>
+
+<p>Choose <strong>(6) Monitor disks for Windows Server</strong>.</p>
+<p>Choose the server name whose disks aren't being monitored yet. If disks are being monitored on all servers, no servers will appear.</p>
+<p>Press enter to start monitoring all disks.</p>
+<p>You will soon receive an alert of all disks on that server. You will also receive alerts from disks that are low on disk space. By default, free space warning alerts will appear weekly, and free space critical disk size alerts will appear daily.</p>
+<p>There will be no need to revisit this menu if disks on this server are created or removed. Adding or removing disks from this server will generate alerts (one alert when a disk is added, one alert when a disk is removed). Handymon automatically discovers when disks are added or removed.</p>
+
+<pre>
+--- Monitor Disks ---
+
+List of servers with unmonitored disks
+
+0: localhost, Display name: localhost Windows Server
+1: WIN-03KD77093JP, Display name: WIN-03KD77093JP Windows Server
+2: WIN-7STS6GU7V7U, Display name: WIN-7STS6GU7V7U Windows Server
+3: WIN-E69DKNA6KF9, Display name: WIN-E69DKNA6KF9 Windows Server
+4: WIN-L2B821BSVK4, Display name: WIN-L2B821BSVK4 Windows Server
+
+### Enter the server number (Enter to exit): 0
+
+Press enter to add the disk container:
+Added to database ok.
+</pre>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Adding Disk Monitors
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</add_disk_monitors.htm>]-->
+
+
+<!--[<add_mssql_monitors.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="add_mssql_monitors.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Adding SQL Server Monitors</h3>
+</div>
+<div class="card-body">
+<p><strong>Adding SQL Server Monitors</strong></p>
+
+<p>There are two steps required when adding a SQL Server to be monitored.</p>
+<p><ol>
+<li>Choose the SQL Server instance.</li>
+<li>Choose the credential to use for monitoring the instance`.</li>
+</ol></p>
+
+<p>We will go through each step.</p>
+
+<p>Choose <strong>(5) Monitor new SQL Server instance</strong>.</p>
+
+<p>Choose <strong>(1) SQL Server instance name</strong>.</p>
+
+<pre>
+--- Add New SQL Server Instance ---
+
+This will involve 2 steps:
+
+Step 1: Select a SQL Server instance
+Step 2: Select monitoring credentials
+
+--- Step 1: Select a SQL Server Instance
+
+(1) SQL Server instance name: []
+(2) Display name: []
+(3) SQL Server connection security settings: [Encrypt: AUTO-DETECT, Trust Server Cert: AUTO-DETECT]
+(4) Schedule blackout start date (when to pause polling): []
+(5) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(N) Next: Select monitoring credentials
+(C) Cancel and exit
+
+### Enter choice (#,N,C): 1
+
+List of Windows Servers
+
+(0) localhost, Display name: localhost Windows Server, 0 instances
+(1) sql01, Display name: sql01 Windows Server, 0 instances
+(2) WIN-03KD77093JP, Display name: WIN-03KD77093JP Windows Server, 0 instances
+(3) WIN-7STS6GU7V7U, Display name: WIN-7STS6GU7V7U Windows Server, 0 instances
+(4) WIN-E69DKNA6KF9, Display name: WIN-E69DKNA6KF9 Windows Server, Instance name: WIN-E69DKNA6KF9
+(5) WIN-L2B821BSVK4, Display name: WIN-L2B821BSVK4 Windows Server, 0 instances
+(B) Back to Step 1
+(C) Cancel and exit
+
+Enter the server number, server name, or servername\named_instance to monitor
+B to go back, C to Cancel and exit
+
+### 0-5, server, server\name, B, C: 
+</pre>
+
+<p>At this prompt, </p>
+<ol>
+<li>Type the server's number to monitor an instance on that server:
+<pre>
+### 0-5, server, server\name, B, C: 5
+</pre>
+</li>
+
+<li>Type the instance to be monitored with a known Windows monitor:
+<pre>
+### 0-5, server, server\name, B, C: WIN-L2B821BSVK4
+</pre>
+</li>
+
+<li>Type the new instance to be monitored:
+<pre>
+### 0-5, server, server\name, B, C: PROD-DB-SERVER
+</pre>
+</li>
+
+<li>Type the new named instance to be monitored:
+<pre>
+### 0-5, server, server\name, B, C: PROD-DB-SERVER\PRIMARY
+</pre>
+</li>
+
+</ol>
+
+<p>If you type a named instance, e.g., <code>PROD-DB-SERVER\PRIMARY</code>, this next section will not appear.</p>
+
+<pre>
+> No SQL Server instances found.
+If it's a named instance (i.e., WIN-L2B821BSVK4\instance_2), enter just the instance name (i.e., "instance_2").
+If it's the default instance, leave it blank.
+
+### Named instance (or Enter, "B" to go back, "C" to cancel):
+</pre>
+
+<p>Next, you will be prompted to enter a display name.</p>
+
+<pre>
+### Type new Display name (Enter to use "WIN-L2B821BSVK4 SQL Server", or "N" to exit):
+</pre>
+
+<p>Next, you will need to choose the credential used for monitoring the SQL Server instance.</p>
+<p>In this case, we'll use the same credential to monitor the instance as the one we're using to monitor the server.</p>
+
+<pre>
+--- Add New SQL Server Instance ---
+
+This will involve 2 steps:
+
+Step 1: Select a SQL Server instance
+Step 2: Select monitoring credentials
+
+--- Step 1: Select a SQL Server Instance
+
+(1) SQL Server instance name: [WIN-L2B821BSVK4]
+(2) Display name: [WIN-L2B821BSVK4 SQL Server]
+(3) SQL Server connection security settings: [Encrypt: AUTO-DETECT, Trust Server Cert: AUTO-DETECT]
+(4) Schedule blackout start date (when to pause polling): []
+(5) Schedule blackout end date (when to resume polling): []
+    Polling will be enabled (no blackout period set).
+(N) Next: Select monitoring credentials
+(C) Cancel and exit
+
+### Enter choice (#,N,C): n
+</pre>
+
+<p>Next, select how you want to specify the credentials for monitoring your SQL Server instance.</p>
+
+<pre>
+--- Step 2: Select monitoring credentials for WIN-L2B821BSVK4
+
+(1) Allow Handymon to create the monitoring login on WIN-L2B821BSVK4.
+    Handymon will prompt you for a login with sysadmin permissions on WIN-L2B821BSVK4,
+    create the new credential, then grant it permssions.
+(2) Scan logins on WIN-L2B821BSVK4 for a match.
+    Handymon will prompt you for a login with sysadmin permissions on WIN-L2B821BSVK4,
+    analyze logins on the instance, show matching Handymon credentials, then let you choose
+    which credential to use.
+(3) Choose which Handymon credential to monitor WIN-L2B821BSVK4 with.
+    Handymon will prompt you for which credential to when monitoring WIN-L2B821BSVK4,
+    then (optionally) verify the credentials work.
+(B) Go Back
+
+### Enter (1 - 3, or "B" to go back):
+</pre>
+
+<p>From here, you can have Handymon create, scan and choose, or type the credentials to use for monitoring. We will let Handymon create the credential.</p>
+
+<pre>
+### Enter (1 - 3, or "B" to go back): 1
+
+In order to create the login WIN-L2B821BSVK4\handymon on WIN-L2B821BSVK4,
+handymon will need to use credentials with sysadmin permissions.
+Enter a login with sysadmin permissions on WIN-L2B821BSVK4 (domain\ad_account, SQL login name, sa, etc.).
+These credentials will not be stored.
+
+### Sysadmin login: sa
+### Password: SA_PASSWORD_HERE
+
+Connecting to WIN-L2B821BSVK4 with sa credentials. One moment ...
+Autodetecting security settings
+Trust server certificate: TRUE, Force encryption: TRUE
+
+Verifying sa is a sysadmin. One moment ...
+sa is a sysadmin
+
+Seeing if WIN-L2B821BSVK4\handymon is already on WIN-L2B821BSVK4 ...
+Login WIN-L2B821BSVK4\handymon does not exist on WIN-L2B821BSVK4
+Creating login 'WIN-L2B821BSVK4\handymon'
+Login 'WIN-L2B821BSVK4\handymon' created on WIN-L2B821BSVK4
+Granting login WIN-L2B821BSVK4\handymon minimal permissions to the WIN-L2B821BSVK4 instance
+Creating database user WIN-L2B821BSVK4\handymon on WIN-L2B821BSVK4 / msdb
+Granting login WIN-L2B821BSVK4\handymon minimal database permissions on WIN-L2B821BSVK4 / msdb
+
+### Press enter to add the instance to be monitored, or E to exit:
+Done!
+</pre>
+
+<p>Handymon sends an alert the first time it polls something, so you should receive an alert soon.</p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Adding SQL Server Monitors
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</add_mssql_monitors.htm>]-->
+
+<!--[<edit_monitor.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="edit_monitor.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Edit Monitor</h3>
+</div>
+<div class="card-body">
+<p><strong>Edit Existing Monitor</strong></p>
+<p>Handymon will show a list of all monitors, then prompt you to choose one to update.</p>
+<pre>
+--- Update Existing Monitor:
+
+(0) (Windows) WIN-7STS6GU7V7U Windows Server, last polled 10/6/2025 6:16 PM, 51 sec ago, online: TRUE
+(1) (Windows) sql01 Windows Server, last polled 10/6/2025 6:16 PM, 51 sec ago, online: TRUE
+(2) (Windows) WIN-03KD77093JP Windows Server, last polled 10/6/2025 6:17 PM, 25 sec ago, online: TRUE
+(3) (Windows) WIN-L2B821BSVK4 Windows Server, last polled 10/6/2025 6:17 PM, 25 sec ago, online: TRUE
+(4) (SQL Server Instance) WIN-E69DKNA6KF9 SQL Server, last polled 10/6/2025 6:17 PM, 25 sec ago, online: TRUE
+(5) (Windows) WIN-L2B821BSVK4 Windows Server, last polled 10/6/2025 6:16 PM, 51 sec ago, online: TRUE
+
+### Type the monitor number (or Enter to exit): 3
+</pre>
+
+<p>The subsequent menu will let you update the monitor name, display name, and which credential is used. The other menu entries will let you test whether the existing monitor (along with your updates) will succeed before changes are saved.</p>
+
+<pre>
+--- Editing Windows monitor WIN-L2B821BSVK4
+
+All items changed will have an asterisk.
+
+(1) Monitor name: [WIN-L2B821BSVK4]
+(2) Display name: [WIN-L2B821BSVK4 Windows Server]
+(3) Windows username: [WIN-L2B821BSVK4\handymon]
+(4) Schedule blackout stop date (when to pause polling): [NULL]
+(5) Schedule blackout start date (when to resume polling): [NULL]
+    Polling summary: Polling is enabled (no blackout date range)
+(T) Test monitor
+(S) Save changes and exit
+(C) Cancel changes and exit
+
+### Enter choice (#,T,S,C): 2
+
+Display name: WIN-L2B821BSVK4 Windows Server
+Type new Display name (or Enter to use original name): WIN-L2B821BSVK4 Windows Server - Production
+</pre>
+
+ <p>Any unwritten changes will be indicated by asterisks.</p>
+
+<pre>
+--- Editing Windows monitor WIN-L2B821BSVK4
+
+All items changed will have an asterisk.
+
+(1) Monitor name: [WIN-L2B821BSVK4]
+* (2) Display name: [WIN-L2B821BSVK4 Windows Server - Production]
+(3) Windows username: [WIN-L2B821BSVK4\handymon]
+(4) Schedule blackout stop date (when to pause polling): [NULL]
+(5) Schedule blackout start date (when to resume polling): [NULL]
+    Polling summary: Polling is enabled (no blackout date range)
+(T) Test monitor
+(S) Save changes and exit
+(C) Cancel changes and exit
+
+### Enter choice (#,T,S,C):
+</pre>
+<p>Note: Take care when updating the monitor name. Handymon uses that entry to be either the Windows server name or SQL Server instance name.</p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Edit Monitor
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</edit_monitor.htm>]-->
+
+
+
+<!--[<alert_rules.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="alert_rules.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Alert Rules | Description</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+<p>Alert Rules are how Handymon processes each alert. All alerts go through the alert rules process. When a resource generates an alert, and before it can be processed by alert rules, new alerts will be added to the database. One alert will be inserted per alert method. Two examples of alert methods are email and slack. If you have configured Handymon to send alerts to only email, one row will be inserted. Similarly, if you have configured Handymon to send alerts to both email and slack, two rows will be inserted. Alerts are processed in order they were inserted (FIFO).</p>
+<p>Between resource polls, Handymon checks the database for any alerts that have not been processed. It will process one new alert at a time.</p>
+<p>Handymon comes intially configured to send all alerts to one email address and one slack channel. If you are a small organization with only a few servers, this configuration will likely be adequate.</p>
+<pre>
+(0) RULE NAME all_rules:
+
+(1) RULE NAME remaining_messages:
+
+(2) assign $email_to = $default_email_to (config_variable)
+(3) assign $email_cc = $default_email_cc (config_variable)
+(4) assign $email_bcc = $default_email_bcc (config_variable)
+(5) assign $slack_channel = $default_slack_channel (config_variable)
+(6) send_alert
+(7) stop_processing_rules
+</pre>
+<p>Alert rules allow you to change, for example, who is alerted based on the type of resource (Windows server, Windows disk, SQL Server instance, SQL Server Agent, etc.). You can also send the same alert to different email addresses based on the type of resource, or even prevent some alerts from being sent at all. This documentation will explain how to configure and modify alert rules.</p>
+<p>Much like a scripting language, all alerts start at the top and work their way down the list of alert rules.</p>
+<p>We recommend leaving two rules unmodified: RULE NAME all_rules and RULE NAME remaining_messages, at least until you have gained familiarity with alert rules. all_rules is a placeholder, where all alerts will start. Alerts will be processed until it reaches "stop_processing_rules".</p>
+Empty rule steps will be ignored.</p>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Alert Rules
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</alert_rules.htm>]-->
+
+<!--[<alert_rule_examples.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="alert_rule_examples.htm"></a>
+
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Alert Rules | Simple Example</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+Let's update the alert rules with a simple example: We will add a rule to notify salespeople that the sales SQL Server is unavailable.<br />
+<br />
+For this example, our goal is to create this alert rule:<br />
+<br />
+<pre>
+[1] RULE NAME Sales Database Down:
+
+[2] if $mssql_instance = "sales_sql_instance"
+    [Goto If True] continue
+    [Goto If False] goto_next_rule
+
+[3] assign $email_to = "sales_team@company.com"
+[4] send_alert
+</pre>
+
+To accomplish this, enter these commands at the Update Alert Rules menu:<br />
+<br />
+<ol>
+<li>Enter "DA" to disable alert rules. (See Note #1 below.)</li>
+<li>Enter "NR", "1", "Sales Database Down" to insert a new rule above the current remaining_messages rule (rule step #1).</li>
+<li>Enter "NS", "2", "3" to insert 3 new rule steps above the current remaining_messages rule (now, rule step #2).</li>
+<li>Enter "ES" and "2" to start editing rule step #2.</li>
+<li>Enter "if", "mssql_instance", "=", "TYPE IN A VALUE" (the last entry in the list), "sales_sql_instance", "goto_if_true = continue, goto_if_false = goto_next_rule" (#2 in the list).</li>
+<li>Enter "ES" and "3" to start editing rule step #3.</li>
+<li>Enter "assign", "email_to", "TYPE IN A VALUE" (the last entry in the list), ["sales_team@company.com"] (with double-quotes, to indicate it's a string).</li>
+<li>Enter "ES" and "4" to start editing rule step #4.</li>
+<li>Enter "send_alert".</li>
+<li>Enter "EA" to enable alert rules.</li>
+</ol>
+Note: Disabling alert rules ("DA") pauses alert processing, but alerts are queued, not skipped. Queued alerts will be sent once you enable alert rules ("EA").<br />
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Simple Example
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Alert Rules | Real-World Examples</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+Now, let's update the alert rules with a more real-world, complex example: We will add a rule to notify management and developers that one of the SQL agent jobs on the critical production server failed, then stop.<br />
+<br />
+For this example, our goal is to create this alert rule:<br />
+<br />
+<pre>
+[1] RULE NAME Factory SQL Agent Job Failed:
+
+[2] if $serv_type = "mssql_sql_agent_job"
+    [Goto If True] continue
+    [Goto If False] goto_next_rule
+
+[3] if $mssql_sql_agent_job = "Import Daily Customer Sales"
+    [Goto If True] continue
+    [Goto If False] goto_next_rule
+
+[4] if $alert_name = "mssql_sql_agent_job_failed"
+    [Goto If True] continue
+    [Goto If False] goto_next_rule
+
+[5] assign $email_to = "developers@company.com"
+[6] assign $email_cc = "management@company.com"
+[7] send_alert
+[8] stop_processing_rules
+</pre>
+
+To accomplish this, enter these commands at the Update Alert Rules menu:<br />
+<br />
+<ol>
+<li>Enter "DA" to disable alert rules. (See Note #1 below.)</li>
+<li>Enter "NR", "1", "Factory SQL Agent Job Failed" to insert a new rule above the current remaining_messages rule.</li>
+<li>Enter "NS", "2", "7" to insert 7 new rule steps above the current remaining_messages rule (now, rule step #2).</li>
+<li>Enter "ES" and "2" to start editing rule step #2.</li>
+<li>Enter "if", "serv_type", "=", "mssql_sql_agent_job"
+	<ul><li>You might need to choose "TYPE IN A VALUE" then enter "mssql_sql_agent_job" instead.</li></ul>
+</li>
+<li>Choose "goto_if_true = continue, goto_if_false = goto_next_rule" (entry # 2).
+<li>Enter "ES" and "3" to start editing rule step #3.</li>
+<li>Enter "if", "mssql_sql_agent_job", "=", "TYPE IN A VALUE" (the last entry in the list), "Import Daily Customer Sales".
+	<ul><li>If there are no SQL agent jobs, you'll need to just enter "Import Daily Customer Sales" instead.</li></ul>
+</li>
+<li>Choose "goto_if_true = continue, goto_if_false = goto_next_rule" (entry # 2).
+<li>Enter "ES" and "4" to start editing rule step #4.</li>
+<li>Enter "if", "alert_name", "=", "mssql_sql_agent_job_failed", "goto_if_true = continue, goto_if_false = goto_next_rule" (entry #2).</li>
+<li>Enter "ES" and "5" to start editing rule step #5.</li>
+<li>Enter "assign", "email_to", "TYPE IN A VALUE" (the last entry in the list), ["developers@company.com"] (with double-quotes, to indicate it's a string).</li>
+<li>Enter "ES" and "6" to start editing rule step #6.</li>
+<li>Enter "assign", "email_cc", "TYPE IN A VALUE" (the last entry in the list), ["management@company.com"] (with double-quotes, to indicate it's a string).</li>
+<li>Enter "ES" and "7" to start editing rule step #7.</li>
+<li>Enter "send_alert".</li>
+<li>Enter "ES" and "8" to start editing rule step #8.</li>
+<li>Enter "stop_processing_rules".</li>
+<li>Enter "EA" to enable alert rules.</li>
+</ol>
+Note: Disabling alert rules ("DA") pauses alert processing, but alerts are queued, not skipped. Queued alerts will be sent once you enable alert rules ("EA").<br />
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Alert Rules | Real-World Examples
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</alert_rule_examples.htm>]-->
+
+<!--[<alert_rule_reference.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="alert_rule_reference.htm"></a>
+
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Alert Rules | Reference</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+<ul>
+<li>DA: disable alert rules. Pauses processing all alerts.</li>
+<li>EA: enable alert rules. Resumes processing all alerts.</li>
+<li>NR: Add new rule. Creates a placeholder for a series of rule steps. Very useful for using "if" to jump to the next alert rule.
+	<ul>
+	<li>Enter where to insert the new rule. For example, entering "5" will shift all existing rules numbered 5 and higher down by one to make room for the new rule.</li>
+	<li>Enter the name for the new rule.</li>
+	</ul>
+</li>
+<li>DR: delete alert rule. Deletes an entire alert rule and steps it contains, so be careful!</li>
+<li>NS: Insert one or more new rule steps.
+	<ul>
+	<li>Enter where to insert the new rule step. For example, entering "5" will shift all existing rules numbered 5 and higher down by one to make room for the new rule.</li>
+	<li>Enter how many steps to add. It's okay to overestimate the number of rule steps you will need. Handymon ignores empty rule steps.</li>
+	</ul>
+</li>
+<li>ES: Edit rule step. Any existing information on that step will be overwritten.
+<ul>
+	<li>Enter the rule step number you want to edit.</li>
+	<li>Enter the command for the step: assign, if, label, send_alert, send_email_alert, send_slack_alert, stop_processing_rules.</li>
+		<ul>
+		<li>assign: This command sets a value to a variable: "assign [variable] = [value]"
+			<ul>
+				<li>variable: Enter one of the variable names listed (email_to, email_cc, email_bcc, slack_channel), or make one up.</li>
+				<li>value: Either (1) choose from the list of config values, or (2) enter your own value.
+					<ul>
+						<li>If you enter your own value, you can use a specific string by surrounding it with double quotes ("user@companyname.com", "#general", etc.), or you can use a pre-existing variable by prefixing it with a dollar sign ($default_email_to_address, $default_slack_channel, etc.).</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>if: compare a variable to a value, then branch based on the result (true or false): "if [variable] = [value] then [goto if true] else [goto if false]"<br />
+		More correctly: "if [variable] [operator] [value] then [goto if true] else [goto if false]"
+			<ul>
+				<li>variable: Enter one of the variables to compare: alert_method, alert_name, disk, mssql_database, mssql_instance, mssql_sql_agent_job, serv_name, serv_type, win_server</li>
+				<li>operator: Enter one of these operators: =, !=, contains, not_contains</li>
+					<ul>
+						<li>contains or not_contains: matches or skips a match with this substring. This is handy if you have a lot of objects (SQL agent jobs, databases, etc.), and you want to handle them a little differently.</li>
+                        <li>For example, if you have dozens of jobs that match "*batch job*", and you don't care if they generate errors, you can use something like this:<br />
+<pre>
+--- Update Alert Rules
+
+(0) RULE NAME all_rules:
+
+
+(1) RULE NAME filter jobs that match "*batch job*":
+
+(2) if $mssql_sql_agent_job contains "batch job"
+    [Goto If True] continue
+    [Goto If False] goto_next_rule
+
+(3) stop_processing_rules
+
+(4) 
+
+(5)
+
+(6) RULE NAME remaining_messages:
+
+(7) assign $email_to = $default_email_to (config_variable)
+(8) assign $email_cc = $default_email_cc (config_variable)
+(9) assign $email_bcc = $default_email_bcc (config_variable)
+(10) assign $slack_channel = $default_slack_channel (config_variable)
+(11) send_alert
+(12) stop_processing_rules
+
+Alerts enabled: TRUE
+
+[DA] Disable alert rules, [EA] Enable alert rules, [NR] Add New Rule,
+[DR] Delete rule, [NS] Add New Rule Step, [ES] Edit Rule Step,
+[DS] Delete step, [E] Exit
+</pre>
+</li>
+					</ul>
+				<li>value: Enter one of the entries listed, or type the last number in the list to enter your own value. The entries listed will depend on your variable. Here are a few from each:
+					<ul>
+						<li>alert_name: disk_added, disk_critical, mssql_instance_offline, mssql_sql_agent_job_failed, win_server_restart, etc.</li>
+						<li>alert_method: email, slack</li>
+						<li>serv_name: C: (disk), msdb (database), syspolicy_purge_history (sql agent job) WIN-AKVJRRQ2RH3 (windows server), etc. (retrieved from disks, databases, SQL agent jobs, and Windows machines already polled)</li>
+						<li>serv_type: disk, mssql_database, mssql_instance, mssql_sql_agent_job, win_server</li>
+					</ul>
+				</li>
+				<li>branch to: Enter the "goto_if_true" and "goto_if_false" entries that meet your criteria. (The one most used is "goto_if_true = continue, goto_if_false = goto_next_rule".)
+					<ul>
+						<li>Choose "goto_label" to branch to a specific label in the list of alert steps. Be cautious when branching to a label above the current alert step to avoid creating an endless loop.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>label: This gives a step a name. This is used by the "if" command to branch to a specific step.
+			<ul>
+				<li>Either (1) choose from the list of existing "goto_label" values (if any), or (2) enter your own new label.</li>
+			</ul>
+		</li>
+		<li>send_alert: Sends all alerts (email, slack, etc.). Note: this does not exit the alert rules process.</li>
+		<li>send_email_alert: Sends just an email alert. Note: this does not exit the alert rules process.</li>
+		<li>send_slack_alert: Sends just a slack alert. Note: this does not exit the alert rules process.</li>
+		<li>stop_processing_rules: Updates the database that this alert is complete, then exit the alert rules process.</li>
+		</ul>
+	</ul>
+</li>
+<li>DS: Delete rule step. Entering any alert rule step number, except a rule name, will delete it.</li>
+<li>E: Exit the alert rule step menu. Be sure to enable alerts once you are finished editing them.</li>
+</ul>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Alert Rules Reference
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</alert_rule_reference.htm>]-->
+
+
+<!--[<sql_server_login_permissions.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="sql_server_login_permissions.htm"></a>
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">SQL Server Login Permissions</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+<p>These are the permissions Handymon configures on target instances. If you prefer to set it up yourself, here are the commands.</p>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="cred_login_tsql" id="win_2012" onclick="showTSQL('win_2012')" checked> <label for="win_2012" class="form-check-label">Windows Login, SQL Server 2012 or later</label><br />
+<input class="form-check-input" type="radio" name="cred_login_tsql" id="win_2008" onclick="showTSQL('win_2008')"> <label for="win_2008" class="form-check-label">Windows Login, SQL Server 2008 R2 or earlier</label><br />
+<input class="form-check-input" type="radio" name="cred_login_tsql" id="sql_2012" onclick="showTSQL('sql_2012')"> <label for="sql_2012" class="form-check-label">SQL Server Login, SQL Server 2012 or later</label><br />
+<input class="form-check-input" type="radio" name="cred_login_tsql" id="sql_2008" onclick="showTSQL('sql_2008')"> <label for="sql_2008" class="form-check-label">SQL Server Login, SQL Server 2008 R2 or earlier</label><br />
+</div>
+<br />
+
+<!-- T-SQL Sections -->
+<div id="win_2012_section" class="tsql-section">
+    <h4>Windows Login, SQL Server 2012 or later</h4>
+    <pre>
+-- TSQL code to let Handymon poll SQL Server instances
+
+-- Windows login: domainname\handymon
+
+-- TSQL code to create Windows login for Handymon:
+CREATE LOGIN [domainname\handymon] FROM WINDOWS WITH DEFAULT_DATABASE=[master];
+go
+
+use master;
+go
+GRANT VIEW SERVER STATE TO [domainname\handymon];
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'domainname\handymon')
+   CREATE USER [domainname\handymon] FOR LOGIN [domainname\handymon];
+go
+-- grant minimal permissions so the login can read database sizes
+GRANT VIEW ANY DEFINITION TO [domainname\handymon];
+go
+use msdb;
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'domainname\handymon')
+    CREATE USER [domainname\handymon] FOR LOGIN [domainname\handymon];
+go
+/*
+-- If using SQL Server 2012 or later:
+*/
+use msdb;
+go
+if not exists(
+    SELECT *
+    FROM sys.database_role_members AS m
+    INNER JOIN sys.database_principals AS dp ON m.member_principal_id = dp.principal_id
+    INNER JOIN sys.server_principals AS LOGINS ON dp.[sid] = LOGINS.[sid]
+    INNER JOIN sys.database_principals AS ROLES ON m.role_principal_id = ROLES.principal_id
+    WHERE LOGINS.name = N'domainname\handymon'
+    and ROLES.name in ('db_datareader', 'db_owner')
+)
+ALTER ROLE [db_datareader] ADD MEMBER [domainname\handymon];
+go</pre>
+</div>
+
+<div id="win_2008_section" class="tsql-section" style="display: none;">
+    <h4>Windows Login, SQL Server 2008 R2 or earlier</h4>
+    <pre>
+-- TSQL code to let Handymon poll SQL Server instances
+
+-- Windows login: domainname\handymon
+
+-- TSQL code to create Windows login for Handymon:
+CREATE LOGIN [domainname\handymon] FROM WINDOWS WITH DEFAULT_DATABASE=[master];
+go
+
+use master;
+go
+GRANT VIEW SERVER STATE TO [domainname\handymon];
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'domainname\handymon')
+   CREATE USER [domainname\handymon] FOR LOGIN [domainname\handymon];
+go
+-- grant minimal permissions so the login can read database sizes
+GRANT VIEW ANY DEFINITION TO [domainname\handymon];
+go
+use msdb;
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'domainname\handymon')
+    CREATE USER [domainname\handymon] FOR LOGIN [domainname\handymon];
+go
+/*
+-- If using SQL Server 2008 R2 or earlier:
+*/
+use msdb;
+go
+if not exists(
+    SELECT *
+    FROM sys.database_role_members AS m
+    INNER JOIN sys.database_principals AS dp ON m.member_principal_id = dp.principal_id
+    INNER JOIN sys.server_principals AS LOGINS ON dp.[sid] = LOGINS.[sid]
+    INNER JOIN sys.database_principals AS ROLES ON m.role_principal_id = ROLES.principal_id
+    WHERE LOGINS.name = N'domainname\handymon'
+    and ROLES.name in ('db_datareader', 'db_owner')
+)
+EXEC sp_addrolemember N'db_datareader', N'domainname\handymon';
+go</pre>
+</div>
+
+<div id="sql_2012_section" class="tsql-section" style="display: none;">
+    <h4>SQL Server Login, SQL Server 2012 or later</h4>
+    <pre>
+-- TSQL code to let Handymon poll SQL Server instances
+
+-- SQL Server login: handymon
+
+-- TSQL code to create SQL Server login for Handymon:
+CREATE LOGIN [handymon] WITH PASSWORD=N'secret_hm_password', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF;
+go
+
+use master;
+go
+GRANT VIEW SERVER STATE TO [handymon];
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'handymon')
+   CREATE USER [handymon] FOR LOGIN [handymon];
+go
+-- grant minimal permissions so the login can read database sizes
+GRANT VIEW ANY DEFINITION TO [handymon];
+go
+use msdb;
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'handymon')
+    CREATE USER [handymon] FOR LOGIN [handymon];
+go
+/*
+-- If using SQL Server 2012 or later:
+*/
+use msdb;
+go
+if not exists(
+    SELECT *
+    FROM sys.database_role_members AS m
+    INNER JOIN sys.database_principals AS dp ON m.member_principal_id = dp.principal_id
+    INNER JOIN sys.server_principals AS LOGINS ON dp.[sid] = LOGINS.[sid]
+    INNER JOIN sys.database_principals AS ROLES ON m.role_principal_id = ROLES.principal_id
+    WHERE LOGINS.name = N'handymon'
+    and ROLES.name in ('db_datareader', 'db_owner')
+)
+ALTER ROLE [db_datareader] ADD MEMBER [handymon];
+go</pre>
+</div>
+
+<div id="sql_2008_section" class="tsql-section" style="display: none;">
+    <h4>SQL Server Login, SQL Server 2008 R2 or earlier</h4>
+    <pre>
+-- TSQL code to let Handymon poll SQL Server instances
+
+-- SQL Server login: handymon
+
+-- TSQL code to create SQL Server login for Handymon:
+CREATE LOGIN [handymon] WITH PASSWORD=N'secret_hm_password', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF;
+go
+
+use master;
+go
+GRANT VIEW SERVER STATE TO [handymon];
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'handymon')
+   CREATE USER [handymon] FOR LOGIN [handymon];
+go
+-- grant minimal permissions so the login can read database sizes
+GRANT VIEW ANY DEFINITION TO [handymon];
+go
+use msdb;
+go
+if not exists(SELECT * FROM sys.database_principals WHERE name = N'handymon')
+    CREATE USER [handymon] FOR LOGIN [handymon];
+go
+/*
+-- If using SQL Server 2012 or later:
+*/
+use msdb;
+go
+if not exists(
+    SELECT *
+    FROM sys.database_role_members AS m
+    INNER JOIN sys.database_principals AS dp ON m.member_principal_id = dp.principal_id
+    INNER JOIN sys.server_principals AS LOGINS ON dp.[sid] = LOGINS.[sid]
+    INNER JOIN sys.database_principals AS ROLES ON m.role_principal_id = ROLES.principal_id
+    WHERE LOGINS.name = N'handymon'
+    and ROLES.name in ('db_datareader', 'db_owner')
+)
+ALTER ROLE [db_datareader] ADD MEMBER [handymon];
+go
+/*
+-- If using SQL Server 2008 R2 or earlier:
+*/
+use msdb;
+go
+if not exists(
+    SELECT *
+    FROM sys.database_role_members AS m
+    INNER JOIN sys.database_principals AS dp ON m.member_principal_id = dp.principal_id
+    INNER JOIN sys.server_principals AS LOGINS ON dp.[sid] = LOGINS.[sid]
+    INNER JOIN sys.database_principals AS ROLES ON m.role_principal_id = ROLES.principal_id
+    WHERE LOGINS.name = N'handymon'
+    and ROLES.name in ('db_datareader', 'db_owner')
+)
+EXEC sp_addrolemember N'db_datareader', N'handymon';
+go
+</pre>
+</div>
+
+<script>
+function showTSQL(selectedId) {
+    // Hide all T-SQL sections
+    const sections = document.querySelectorAll('.tsql-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the selected T-SQL section
+    const selectedSection = document.getElementById(selectedId + '_section');
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}
+</script>
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+SQL Server Login Permissions
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</sql_server_login_permissions.htm>]-->
+
+
+<!--[<troubleshoot_mssql_instance_monitoring.htm>]-->
+<!--<<header.htm>>-->
+
+<a id="troubleshoot_mssql_instance_monitoring.htm"></a>
+
+<div class="card">
+<div class="card-header">
+<h3 class="card-title">Troubleshoot SQL Server Instance Monitoring Issues</h3>
+
+<div class="card-tools">
+</div>
+</div>
+<div class="card-body">
+Enable TCP/IP Connections
+Launch SQL Server Configuration Manager / Open SQL Server Network Configuration
+/ In the right side panel, if TCP/IP is enabled, skip to the next step.
+/ If it's disabled, wait until downtime is convenient / Right-click TCP/IP / Click Enable / Click Ok / Click SQL Server Services / In the right side panel, right-click SQL Server Services (MSSQLSERVER) if you want to connect to the default instance, or right-click SQL Server Services (YOUR_NAMED_INSTANCE) if it's a non-default named instance / Click Restart / Wait a few moments.
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+Alert Rules Reference
+</div>
+</div>
+
+<!--<<footer.htm>>-->
+<!--[</troubleshoot_mssql_instance_monitoring.htm>]-->
+
+<!--[<footer.htm>]-->
+<!-- This line and below is footer -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+        <b>Version</b> 0.5.0
+    </div>
+    <strong>Copyright &copy; 2023-2030 Handymon</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<!--
+<script src="dist/js/demo.js"></script>
+-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current filename
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    
+    // Find all nav links
+    var navLinks = document.querySelectorAll('a.nav-link');
+    
+    // Loop through each link and update class
+    navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === page) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+<!--[</footer.htm>]-->
