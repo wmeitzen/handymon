@@ -30,7 +30,7 @@ Handymon - simple, free, and built to just work.
 ## <img src="./images/hm-application-icon.png" width="20"/> Features
 
 - Easy Installation
-- Documentation Included &nbsp; [![Download](https://img.shields.io/badge/Download-Documentation-orange)](../../raw/main/Handymon%20Documentation.zip)
+- Documentation Included &nbsp; [![Download](https://img.shields.io/badge/Download-Handymon%20Documentation.zip-orange)](../../raw/main/Handymon%20Documentation.zip)
 - Supports Alerting Through Email and Slack
 - Windows Alerts: Online/Offline, Reboots, Low Disk Space
 - SQL Server Alerts: Online/Offline/Offline Reminders, New Databases, Deleted Databases, New Jobs, Deleted Jobs, Job Errors
